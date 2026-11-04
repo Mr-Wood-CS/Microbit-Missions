@@ -1,0 +1,834 @@
+{
+  "lessons": [
+    {
+      "slug": "01-inputs-events-sequence",
+      "title": "Inputs, events and sequence",
+      "sections": [
+        {
+          "title": "Learning intention",
+          "html": "<p><strong>Learning intention:</strong> Identify an input and an output; explain an event; put instructions in order.</p>"
+        },
+        {
+          "title": "Understand the concept",
+          "html": "<p>An input supplies information. An event starts a section of instructions when something happens. Sequence is the order those instructions run. The display is an output.</p>"
+        },
+        {
+          "title": "Connect it to the micro:bit",
+          "html": "<p><img alt=\"Press button A; Run instructions in order; Show two images.\" src=\"./_assets/concepts/01-inputs-events-sequence.svg\" /></p>\n<p>Pressing A starts this event. The face appears first, stays visible during the pause, and is replaced by a heart.</p>"
+        },
+        {
+          "title": "Read the example",
+          "html": "<p>This is <strong>pseudocode</strong> showing the order and structure of the MakeCode Blocks. It is not code to paste into the editor.</p>\n<pre><code class=\"language-text\">on button A pressed:\n    show happy face\n    pause 500 ms\n    show heart\n</code></pre>"
+        },
+        {
+          "title": "Predict and discuss",
+          "html": "<p>What is the input? Which output appears first? What changes if you swap the two show blocks?</p>"
+        },
+        {
+          "title": "Apply it in your workbook",
+          "html": "<p>Create button reactions using a short sequence of images and pauses. Do not add a repeat or forever loop yet.</p>\n<p><strong>Evidence and explanation:</strong> Show your button event, identify its input and output, and explain why instruction order matters.</p>\n<p>Complete <strong>Tasks 1.1, 1.2 and 1.3</strong> in the <a href=\"https://docs.google.com/document/d/1TtgnkWvogK3TJ2bSEFirT5LDdON6QLlhlYuBmnWRdAc/edit?usp=drivesdk\" rel=\"noopener noreferrer\" target=\"_blank\">Google Docs pupil workbook</a>. Use the lesson heading to find your tasks.</p>"
+        },
+        {
+          "title": "Practical references",
+          "html": "<p>These guides retain their original project numbers; those numbers are not the new teaching lesson numbers. Use the relevant tasks described below.</p>\n<ul>\n<li><a href=\"#/reference/01-pocket-personality\">Pocket personality: button events and sequences.</a></li>\n</ul>\n<p><a href=\"#/lessons\">Back to the teaching sequence</a></p>"
+        }
+      ],
+      "html": "<p><strong>Learning intention:</strong> Identify an input and an output; explain an event; put instructions in order.</p>\n<h2>Understand the concept</h2>\n<p>An input supplies information. An event starts a section of instructions when something happens. Sequence is the order those instructions run. The display is an output.</p>\n<h2>Connect it to the micro:bit</h2>\n<p><img alt=\"Press button A; Run instructions in order; Show two images.\" src=\"./_assets/concepts/01-inputs-events-sequence.svg\" /></p>\n<p>Pressing A starts this event. The face appears first, stays visible during the pause, and is replaced by a heart.</p>\n<h2>Read the example</h2>\n<p>This is <strong>pseudocode</strong> showing the order and structure of the MakeCode Blocks. It is not code to paste into the editor.</p>\n<pre><code class=\"language-text\">on button A pressed:\n    show happy face\n    pause 500 ms\n    show heart\n</code></pre>\n<h2>Predict and discuss</h2>\n<p>What is the input? Which output appears first? What changes if you swap the two show blocks?</p>\n<h2>Apply it in your workbook</h2>\n<p>Create button reactions using a short sequence of images and pauses. Do not add a repeat or forever loop yet.</p>\n<p><strong>Evidence and explanation:</strong> Show your button event, identify its input and output, and explain why instruction order matters.</p>\n<p>Complete <strong>Tasks 1.1, 1.2 and 1.3</strong> in the <a href=\"https://docs.google.com/document/d/1TtgnkWvogK3TJ2bSEFirT5LDdON6QLlhlYuBmnWRdAc/edit?usp=drivesdk\" rel=\"noopener noreferrer\" target=\"_blank\">Google Docs pupil workbook</a>. Use the lesson heading to find your tasks.</p>\n<h2>Practical references</h2>\n<p>These guides retain their original project numbers; those numbers are not the new teaching lesson numbers. Use the relevant tasks described below.</p>\n<ul>\n<li><a href=\"#/reference/01-pocket-personality\">Pocket personality: button events and sequences.</a></li>\n</ul>\n<p><a href=\"#/lessons\">Back to the teaching sequence</a></p>"
+    },
+    {
+      "slug": "02-variables-random-numbers",
+      "title": "Variables and random numbers",
+      "sections": [
+        {
+          "title": "Learning intention",
+          "html": "<p><strong>Learning intention:</strong> Store a number in a variable and explain how a random range works.</p>"
+        },
+        {
+          "title": "Understand the concept",
+          "html": "<p>A variable is a named place to store a value. Setting it replaces its current value. A random-number block chooses a value within the limits you give it.</p>"
+        },
+        {
+          "title": "Connect it to the micro:bit",
+          "html": "<p><img alt=\"Shake the board; Store random roll; Display stored value.\" src=\"./_assets/concepts/02-variables-random-numbers.svg\" /></p>\n<p>Shaking chooses and stores a new roll. Pressing A displays the stored value without rolling again. Set roll to 1 at startup so A also has a value before the first shake.</p>"
+        },
+        {
+          "title": "Read the example",
+          "html": "<p>This is <strong>pseudocode</strong> showing the order and structure of the MakeCode Blocks. It is not code to paste into the editor.</p>\n<pre><code class=\"language-text\">on shake:\n    set roll to pick random 1 to 6\n    show number roll\non button A pressed:\n    show number roll\n</code></pre>"
+        },
+        {
+          "title": "Predict and discuss",
+          "html": "<p>If roll stores 4, what will two A presses display? Can 0 or 7 be generated by the stated range?</p>"
+        },
+        {
+          "title": "Apply it in your workbook",
+          "html": "<p>Build the dice without an if block. Record 30 rolls and check every result is between 1 and 6. Keep this project for Lesson 3.</p>\n<p><strong>Evidence and explanation:</strong> Explain what roll stores and the difference between generating a new value and displaying the stored value.</p>\n<p>Complete <strong>Tasks 2.1, 2.2 and 2.3</strong> in the <a href=\"https://docs.google.com/document/d/1TtgnkWvogK3TJ2bSEFirT5LDdON6QLlhlYuBmnWRdAc/edit?usp=drivesdk\" rel=\"noopener noreferrer\" target=\"_blank\">Google Docs pupil workbook</a>. Use the lesson heading to find your tasks.</p>"
+        },
+        {
+          "title": "Practical references",
+          "html": "<p>These guides retain their original project numbers; those numbers are not the new teaching lesson numbers. Use the relevant tasks described below.</p>\n<ul>\n<li><a href=\"#/reference/02-unfair-dice\">Dice reference: use the corrected dice in Task 2; investigate its faulty condition in Lesson 3.</a></li>\n</ul>\n<p><a href=\"#/lessons\">Back to the teaching sequence</a></p>"
+        }
+      ],
+      "html": "<p><strong>Learning intention:</strong> Store a number in a variable and explain how a random range works.</p>\n<h2>Understand the concept</h2>\n<p>A variable is a named place to store a value. Setting it replaces its current value. A random-number block chooses a value within the limits you give it.</p>\n<h2>Connect it to the micro:bit</h2>\n<p><img alt=\"Shake the board; Store random roll; Display stored value.\" src=\"./_assets/concepts/02-variables-random-numbers.svg\" /></p>\n<p>Shaking chooses and stores a new roll. Pressing A displays the stored value without rolling again. Set roll to 1 at startup so A also has a value before the first shake.</p>\n<h2>Read the example</h2>\n<p>This is <strong>pseudocode</strong> showing the order and structure of the MakeCode Blocks. It is not code to paste into the editor.</p>\n<pre><code class=\"language-text\">on shake:\n    set roll to pick random 1 to 6\n    show number roll\non button A pressed:\n    show number roll\n</code></pre>\n<h2>Predict and discuss</h2>\n<p>If roll stores 4, what will two A presses display? Can 0 or 7 be generated by the stated range?</p>\n<h2>Apply it in your workbook</h2>\n<p>Build the dice without an if block. Record 30 rolls and check every result is between 1 and 6. Keep this project for Lesson 3.</p>\n<p><strong>Evidence and explanation:</strong> Explain what roll stores and the difference between generating a new value and displaying the stored value.</p>\n<p>Complete <strong>Tasks 2.1, 2.2 and 2.3</strong> in the <a href=\"https://docs.google.com/document/d/1TtgnkWvogK3TJ2bSEFirT5LDdON6QLlhlYuBmnWRdAc/edit?usp=drivesdk\" rel=\"noopener noreferrer\" target=\"_blank\">Google Docs pupil workbook</a>. Use the lesson heading to find your tasks.</p>\n<h2>Practical references</h2>\n<p>These guides retain their original project numbers; those numbers are not the new teaching lesson numbers. Use the relevant tasks described below.</p>\n<ul>\n<li><a href=\"#/reference/02-unfair-dice\">Dice reference: use the corrected dice in Task 2; investigate its faulty condition in Lesson 3.</a></li>\n</ul>\n<p><a href=\"#/lessons\">Back to the teaching sequence</a></p>"
+    },
+    {
+      "slug": "03-selection-comparisons",
+      "title": "Selection and comparisons",
+      "sections": [
+        {
+          "title": "Learning intention",
+          "html": "<p><strong>Learning intention:</strong> Use an if condition to choose whether instructions run.</p>"
+        },
+        {
+          "title": "Understand the concept",
+          "html": "<p>Selection makes a decision. A condition is a check with a true or false result. Equality (=) checks whether values match; &gt; and &lt; compare their size.</p>"
+        },
+        {
+          "title": "Connect it to the micro:bit",
+          "html": "<p><img alt=\"Read stored roll; Is roll equal to 6?; Choose a response.\" src=\"./_assets/concepts/03-selection-comparisons.svg\" /></p>\n<p>Continue with the dice from Lesson 2. Button B checks the stored roll; it does not generate another number. The else branch runs when roll is not 6.</p>"
+        },
+        {
+          "title": "Read the example",
+          "html": "<p>This is <strong>pseudocode</strong> showing the order and structure of the MakeCode Blocks. It is not code to paste into the editor.</p>\n<pre><code class=\"language-text\">on button B pressed:\n    if roll = 6:\n        show happy face\n    else:\n        show number roll\n</code></pre>"
+        },
+        {
+          "title": "Predict and discuss",
+          "html": "<p>Trace the event for roll = 6 and roll = 2. Does displaying a face change the value stored in roll?</p>"
+        },
+        {
+          "title": "Apply it in your workbook",
+          "html": "<p>Add a decision to your existing dice. Then inspect the faulty rule that changes every 6 to 1 and explain why it makes the dice unfair.</p>\n<p><strong>Evidence and explanation:</strong> Include your condition, predictions for both outcomes and actual test results.</p>\n<p>Complete <strong>Tasks 3.1, 3.2 and 3.3</strong> in the <a href=\"https://docs.google.com/document/d/1TtgnkWvogK3TJ2bSEFirT5LDdON6QLlhlYuBmnWRdAc/edit?usp=drivesdk\" rel=\"noopener noreferrer\" target=\"_blank\">Google Docs pupil workbook</a>. Use the lesson heading to find your tasks.</p>"
+        },
+        {
+          "title": "Practical references",
+          "html": "<p>These guides retain their original project numbers; those numbers are not the new teaching lesson numbers. Use the relevant tasks described below.</p>\n<ul>\n<li><a href=\"#/reference/02-unfair-dice\">Faulty dice investigation: trace the if rule in Task 1, then repair it.</a></li>\n</ul>\n<p><a href=\"#/lessons\">Back to the teaching sequence</a></p>"
+        }
+      ],
+      "html": "<p><strong>Learning intention:</strong> Use an if condition to choose whether instructions run.</p>\n<h2>Understand the concept</h2>\n<p>Selection makes a decision. A condition is a check with a true or false result. Equality (=) checks whether values match; &gt; and &lt; compare their size.</p>\n<h2>Connect it to the micro:bit</h2>\n<p><img alt=\"Read stored roll; Is roll equal to 6?; Choose a response.\" src=\"./_assets/concepts/03-selection-comparisons.svg\" /></p>\n<p>Continue with the dice from Lesson 2. Button B checks the stored roll; it does not generate another number. The else branch runs when roll is not 6.</p>\n<h2>Read the example</h2>\n<p>This is <strong>pseudocode</strong> showing the order and structure of the MakeCode Blocks. It is not code to paste into the editor.</p>\n<pre><code class=\"language-text\">on button B pressed:\n    if roll = 6:\n        show happy face\n    else:\n        show number roll\n</code></pre>\n<h2>Predict and discuss</h2>\n<p>Trace the event for roll = 6 and roll = 2. Does displaying a face change the value stored in roll?</p>\n<h2>Apply it in your workbook</h2>\n<p>Add a decision to your existing dice. Then inspect the faulty rule that changes every 6 to 1 and explain why it makes the dice unfair.</p>\n<p><strong>Evidence and explanation:</strong> Include your condition, predictions for both outcomes and actual test results.</p>\n<p>Complete <strong>Tasks 3.1, 3.2 and 3.3</strong> in the <a href=\"https://docs.google.com/document/d/1TtgnkWvogK3TJ2bSEFirT5LDdON6QLlhlYuBmnWRdAc/edit?usp=drivesdk\" rel=\"noopener noreferrer\" target=\"_blank\">Google Docs pupil workbook</a>. Use the lesson heading to find your tasks.</p>\n<h2>Practical references</h2>\n<p>These guides retain their original project numbers; those numbers are not the new teaching lesson numbers. Use the relevant tasks described below.</p>\n<ul>\n<li><a href=\"#/reference/02-unfair-dice\">Faulty dice investigation: trace the if rule in Task 1, then repair it.</a></li>\n</ul>\n<p><a href=\"#/lessons\">Back to the teaching sequence</a></p>"
+    },
+    {
+      "slug": "04-iteration",
+      "title": "Iteration",
+      "sections": [
+        {
+          "title": "Learning intention",
+          "html": "<p><strong>Learning intention:</strong> Explain counted repetition and distinguish it from continuous repetition.</p>"
+        },
+        {
+          "title": "Understand the concept",
+          "html": "<p>Iteration means repeating instructions. A repeat loop runs a fixed number of times. A forever loop keeps running its enclosed instructions while the program runs.</p>"
+        },
+        {
+          "title": "Connect it to the micro:bit",
+          "html": "<p><img alt=\"Shake the board; Repeat three times; Animate the display.\" src=\"./_assets/concepts/04-iteration.svg\" /></p>\n<p>Return to the character from Lesson 1 and add the shake animation. Both show blocks and both pauses belong inside the loop. Later, try a separate forever example that repeatedly displays the light level.</p>"
+        },
+        {
+          "title": "Read the example",
+          "html": "<p>This is <strong>pseudocode</strong> showing the order and structure of the MakeCode Blocks. It is not code to paste into the editor.</p>\n<pre><code class=\"language-text\">on shake:\n    repeat 3 times:\n        show diamond\n        pause 200 ms\n        show small diamond\n        pause 200 ms\n</code></pre>"
+        },
+        {
+          "title": "Predict and discuss",
+          "html": "<p>How many image instructions run after one shake? How is repeat 3 different from forever?</p>"
+        },
+        {
+          "title": "Apply it in your workbook",
+          "html": "<p>Add and test the counted animation. In a separate example, use forever to show the light level, pause 500 ms, then repeat automatically as you cover and uncover the display.</p>\n<p><strong>Evidence and explanation:</strong> Show both loop structures and explain when each is useful.</p>\n<p>Complete <strong>Tasks 4.1, 4.2 and 4.3</strong> in the <a href=\"https://docs.google.com/document/d/1TtgnkWvogK3TJ2bSEFirT5LDdON6QLlhlYuBmnWRdAc/edit?usp=drivesdk\" rel=\"noopener noreferrer\" target=\"_blank\">Google Docs pupil workbook</a>. Use the lesson heading to find your tasks.</p>"
+        },
+        {
+          "title": "Practical references",
+          "html": "<p>These guides retain their original project numbers; those numbers are not the new teaching lesson numbers. Use the relevant tasks described below.</p>\n<ul>\n<li><a href=\"#/reference/01-pocket-personality\">Character reference: reopen the button project, then add the shake loop shown on this teaching page.</a></li>\n<li><a href=\"#/reference/04-treasure-alarm\">Light measurement reference: the alarm is developed in Lesson 5.</a></li>\n</ul>\n<p><a href=\"#/lessons\">Back to the teaching sequence</a></p>"
+        }
+      ],
+      "html": "<p><strong>Learning intention:</strong> Explain counted repetition and distinguish it from continuous repetition.</p>\n<h2>Understand the concept</h2>\n<p>Iteration means repeating instructions. A repeat loop runs a fixed number of times. A forever loop keeps running its enclosed instructions while the program runs.</p>\n<h2>Connect it to the micro:bit</h2>\n<p><img alt=\"Shake the board; Repeat three times; Animate the display.\" src=\"./_assets/concepts/04-iteration.svg\" /></p>\n<p>Return to the character from Lesson 1 and add the shake animation. Both show blocks and both pauses belong inside the loop. Later, try a separate forever example that repeatedly displays the light level.</p>\n<h2>Read the example</h2>\n<p>This is <strong>pseudocode</strong> showing the order and structure of the MakeCode Blocks. It is not code to paste into the editor.</p>\n<pre><code class=\"language-text\">on shake:\n    repeat 3 times:\n        show diamond\n        pause 200 ms\n        show small diamond\n        pause 200 ms\n</code></pre>\n<h2>Predict and discuss</h2>\n<p>How many image instructions run after one shake? How is repeat 3 different from forever?</p>\n<h2>Apply it in your workbook</h2>\n<p>Add and test the counted animation. In a separate example, use forever to show the light level, pause 500 ms, then repeat automatically as you cover and uncover the display.</p>\n<p><strong>Evidence and explanation:</strong> Show both loop structures and explain when each is useful.</p>\n<p>Complete <strong>Tasks 4.1, 4.2 and 4.3</strong> in the <a href=\"https://docs.google.com/document/d/1TtgnkWvogK3TJ2bSEFirT5LDdON6QLlhlYuBmnWRdAc/edit?usp=drivesdk\" rel=\"noopener noreferrer\" target=\"_blank\">Google Docs pupil workbook</a>. Use the lesson heading to find your tasks.</p>\n<h2>Practical references</h2>\n<p>These guides retain their original project numbers; those numbers are not the new teaching lesson numbers. Use the relevant tasks described below.</p>\n<ul>\n<li><a href=\"#/reference/01-pocket-personality\">Character reference: reopen the button project, then add the shake loop shown on this teaching page.</a></li>\n<li><a href=\"#/reference/04-treasure-alarm\">Light measurement reference: the alarm is developed in Lesson 5.</a></li>\n</ul>\n<p><a href=\"#/lessons\">Back to the teaching sequence</a></p>"
+    },
+    {
+      "slug": "05-boolean-logic-state",
+      "title": "Boolean logic and state",
+      "sections": [
+        {
+          "title": "Learning intention",
+          "html": "<p><strong>Learning intention:</strong> Use true/false values to record state and combine checks with AND.</p>"
+        },
+        {
+          "title": "Understand the concept",
+          "html": "<p>A Boolean value is true or false. State records the current situation of a program. AND requires both checks to be true; NOT reverses a true/false result.</p>"
+        },
+        {
+          "title": "Connect it to the micro:bit",
+          "html": "<p><img alt=\"Read light level; Armed AND above limit?; Trigger the alarm.\" src=\"./_assets/concepts/05-boolean-logic-state.svg\" /></p>\n<p>Set armed and triggered to false at startup. Button A clears triggered then sets armed to true. Button B sets both to false and clears the display. Once triggered is true, covering the display does not reset it.</p>"
+        },
+        {
+          "title": "Read the example",
+          "html": "<p>This is <strong>pseudocode</strong> showing the order and structure of the MakeCode Blocks. It is not code to paste into the editor.</p>\n<pre><code class=\"language-text\">forever:\n    if armed AND light level &gt; threshold:\n        set triggered to true\n    if armed AND triggered:\n        show cross\n        pause 200 ms\n        clear screen\n        pause 200 ms\n</code></pre>"
+        },
+        {
+          "title": "Predict and discuss",
+          "html": "<p>Will the alarm trigger when armed is false? Why does it keep flashing after the light drops?</p>"
+        },
+        {
+          "title": "Apply it in your workbook",
+          "html": "<p>Measure covered and uncovered light readings. Choose a threshold between them, then build and test the armed alarm.</p>\n<p><strong>Evidence and explanation:</strong> Record your threshold, a test while disarmed, a trigger test and a stop test. Explain what each Boolean variable records.</p>\n<p>Complete <strong>Tasks 5.1, 5.2 and 5.3</strong> in the <a href=\"https://docs.google.com/document/d/1TtgnkWvogK3TJ2bSEFirT5LDdON6QLlhlYuBmnWRdAc/edit?usp=drivesdk\" rel=\"noopener noreferrer\" target=\"_blank\">Google Docs pupil workbook</a>. Use the lesson heading to find your tasks.</p>"
+        },
+        {
+          "title": "Practical references",
+          "html": "<p>These guides retain their original project numbers; those numbers are not the new teaching lesson numbers. Use the relevant tasks described below.</p>\n<ul>\n<li><a href=\"#/reference/04-treasure-alarm\">Use the alarm build instructions and test table.</a></li>\n</ul>\n<p><a href=\"#/lessons\">Back to the teaching sequence</a></p>"
+        }
+      ],
+      "html": "<p><strong>Learning intention:</strong> Use true/false values to record state and combine checks with AND.</p>\n<h2>Understand the concept</h2>\n<p>A Boolean value is true or false. State records the current situation of a program. AND requires both checks to be true; NOT reverses a true/false result.</p>\n<h2>Connect it to the micro:bit</h2>\n<p><img alt=\"Read light level; Armed AND above limit?; Trigger the alarm.\" src=\"./_assets/concepts/05-boolean-logic-state.svg\" /></p>\n<p>Set armed and triggered to false at startup. Button A clears triggered then sets armed to true. Button B sets both to false and clears the display. Once triggered is true, covering the display does not reset it.</p>\n<h2>Read the example</h2>\n<p>This is <strong>pseudocode</strong> showing the order and structure of the MakeCode Blocks. It is not code to paste into the editor.</p>\n<pre><code class=\"language-text\">forever:\n    if armed AND light level &gt; threshold:\n        set triggered to true\n    if armed AND triggered:\n        show cross\n        pause 200 ms\n        clear screen\n        pause 200 ms\n</code></pre>\n<h2>Predict and discuss</h2>\n<p>Will the alarm trigger when armed is false? Why does it keep flashing after the light drops?</p>\n<h2>Apply it in your workbook</h2>\n<p>Measure covered and uncovered light readings. Choose a threshold between them, then build and test the armed alarm.</p>\n<p><strong>Evidence and explanation:</strong> Record your threshold, a test while disarmed, a trigger test and a stop test. Explain what each Boolean variable records.</p>\n<p>Complete <strong>Tasks 5.1, 5.2 and 5.3</strong> in the <a href=\"https://docs.google.com/document/d/1TtgnkWvogK3TJ2bSEFirT5LDdON6QLlhlYuBmnWRdAc/edit?usp=drivesdk\" rel=\"noopener noreferrer\" target=\"_blank\">Google Docs pupil workbook</a>. Use the lesson heading to find your tasks.</p>\n<h2>Practical references</h2>\n<p>These guides retain their original project numbers; those numbers are not the new teaching lesson numbers. Use the relevant tasks described below.</p>\n<ul>\n<li><a href=\"#/reference/04-treasure-alarm\">Use the alarm build instructions and test table.</a></li>\n</ul>\n<p><a href=\"#/lessons\">Back to the teaching sequence</a></p>"
+    },
+    {
+      "slug": "06-coordinates-boundaries",
+      "title": "Coordinates and boundaries",
+      "sections": [
+        {
+          "title": "Learning intention",
+          "html": "<p><strong>Learning intention:</strong> Use display coordinates and conditions to keep a moving dot within the screen.</p>"
+        },
+        {
+          "title": "Understand the concept",
+          "html": "<p>The display has five rows and five columns. Coordinates run from 0 to 4. x increases to the right; y increases downwards. Boundary checks stop a position leaving that range.</p>"
+        },
+        {
+          "title": "Connect it to the micro:bit",
+          "html": "<p><img alt=\"Tilt left; Check x &gt; 0; Decrease x by 1.\" src=\"./_assets/concepts/06-coordinates-boundaries.svg\" /></p>\n<p>The player stays on row 4 while x changes. Start with this moving dot; scoring and reset routines can be added later.</p>"
+        },
+        {
+          "title": "Read the example",
+          "html": "<p>This is <strong>pseudocode</strong> showing the order and structure of the MakeCode Blocks. It is not code to paste into the editor.</p>\n<pre><code class=\"language-text\">on start:\n    set x to 2\nforever:\n    if acceleration x &lt; -300 AND x &gt; 0:\n        change x by -1\n    if acceleration x &gt; 300 AND x &lt; 4:\n        change x by 1\n    clear screen\n    plot x, 4\n    pause 200 ms\n</code></pre>"
+        },
+        {
+          "title": "Predict and discuss",
+          "html": "<p>At x = 0, what happens on a left tilt? Where is the point 2, 4?</p>"
+        },
+        {
+          "title": "Apply it in your workbook",
+          "html": "<p>Build the moving dot and test both edges repeatedly. Reuse your conditions, loop and variable knowledge.</p>\n<p><strong>Evidence and explanation:</strong> Label the axes, explain one boundary condition and record the results at both edges.</p>\n<p>Complete <strong>Tasks 6.1, 6.2 and 6.3</strong> in the <a href=\"https://docs.google.com/document/d/1TtgnkWvogK3TJ2bSEFirT5LDdON6QLlhlYuBmnWRdAc/edit?usp=drivesdk\" rel=\"noopener noreferrer\" target=\"_blank\">Google Docs pupil workbook</a>. Use the lesson heading to find your tasks.</p>"
+        },
+        {
+          "title": "Practical references",
+          "html": "<p>These guides retain their original project numbers; those numbers are not the new teaching lesson numbers. Use the relevant tasks described below.</p>\n<ul>\n<li><a href=\"#/reference/05-tilt-arcade\">Use the movement and boundary examples. Leave resetGame until Lesson 7.</a></li>\n</ul>\n<p><a href=\"#/lessons\">Back to the teaching sequence</a></p>"
+        }
+      ],
+      "html": "<p><strong>Learning intention:</strong> Use display coordinates and conditions to keep a moving dot within the screen.</p>\n<h2>Understand the concept</h2>\n<p>The display has five rows and five columns. Coordinates run from 0 to 4. x increases to the right; y increases downwards. Boundary checks stop a position leaving that range.</p>\n<h2>Connect it to the micro:bit</h2>\n<p><img alt=\"Tilt left; Check x &gt; 0; Decrease x by 1.\" src=\"./_assets/concepts/06-coordinates-boundaries.svg\" /></p>\n<p>The player stays on row 4 while x changes. Start with this moving dot; scoring and reset routines can be added later.</p>\n<h2>Read the example</h2>\n<p>This is <strong>pseudocode</strong> showing the order and structure of the MakeCode Blocks. It is not code to paste into the editor.</p>\n<pre><code class=\"language-text\">on start:\n    set x to 2\nforever:\n    if acceleration x &lt; -300 AND x &gt; 0:\n        change x by -1\n    if acceleration x &gt; 300 AND x &lt; 4:\n        change x by 1\n    clear screen\n    plot x, 4\n    pause 200 ms\n</code></pre>\n<h2>Predict and discuss</h2>\n<p>At x = 0, what happens on a left tilt? Where is the point 2, 4?</p>\n<h2>Apply it in your workbook</h2>\n<p>Build the moving dot and test both edges repeatedly. Reuse your conditions, loop and variable knowledge.</p>\n<p><strong>Evidence and explanation:</strong> Label the axes, explain one boundary condition and record the results at both edges.</p>\n<p>Complete <strong>Tasks 6.1, 6.2 and 6.3</strong> in the <a href=\"https://docs.google.com/document/d/1TtgnkWvogK3TJ2bSEFirT5LDdON6QLlhlYuBmnWRdAc/edit?usp=drivesdk\" rel=\"noopener noreferrer\" target=\"_blank\">Google Docs pupil workbook</a>. Use the lesson heading to find your tasks.</p>\n<h2>Practical references</h2>\n<p>These guides retain their original project numbers; those numbers are not the new teaching lesson numbers. Use the relevant tasks described below.</p>\n<ul>\n<li><a href=\"#/reference/05-tilt-arcade\">Use the movement and boundary examples. Leave resetGame until Lesson 7.</a></li>\n</ul>\n<p><a href=\"#/lessons\">Back to the teaching sequence</a></p>"
+    },
+    {
+      "slug": "07-functions",
+      "title": "Functions",
+      "sections": [
+        {
+          "title": "Learning intention",
+          "html": "<p><strong>Learning intention:</strong> Define a named group of instructions, call it and explain why reuse is useful.</p>"
+        },
+        {
+          "title": "Understand the concept",
+          "html": "<p>A function groups instructions under a name. Defining it specifies what it does. Calling it runs those instructions. The same function can be called from different places.</p>"
+        },
+        {
+          "title": "Connect it to the micro:bit",
+          "html": "<p><img alt=\"Startup or button A; Call resetGame; Run reset instructions.\" src=\"./_assets/concepts/07-functions.svg\" /></p>\n<p>Continue the tilt project. Put the reset instructions in one function and call it at startup and from button A. If both places need the same reset behaviour, you only need to edit the function once.</p>"
+        },
+        {
+          "title": "Read the example",
+          "html": "<p>This is <strong>pseudocode</strong> showing the order and structure of the MakeCode Blocks. It is not code to paste into the editor.</p>\n<pre><code class=\"language-text\">function resetGame:\n    set x to 2\n    set score to 0\n    clear screen\non start:\n    call resetGame\non button A pressed:\n    call resetGame\n</code></pre>"
+        },
+        {
+          "title": "Predict and discuss",
+          "html": "<p>Does defining resetGame run it? Where is it called? What changes at both call sites if you add an instruction inside it?</p>"
+        },
+        {
+          "title": "Apply it in your workbook",
+          "html": "<p>Create resetGame, move your reset instructions inside it and call it from startup and button A. Use a name that describes its purpose.</p>\n<p><strong>Evidence and explanation:</strong> Show the function and its two calls. Explain the difference between defining and calling it.</p>\n<p>Complete <strong>Tasks 7.1, 7.2 and 7.3</strong> in the <a href=\"https://docs.google.com/document/d/1TtgnkWvogK3TJ2bSEFirT5LDdON6QLlhlYuBmnWRdAc/edit?usp=drivesdk\" rel=\"noopener noreferrer\" target=\"_blank\">Google Docs pupil workbook</a>. Use the lesson heading to find your tasks.</p>"
+        },
+        {
+          "title": "Practical references",
+          "html": "<p>These guides retain their original project numbers; those numbers are not the new teaching lesson numbers. Use the relevant tasks described below.</p>\n<ul>\n<li><a href=\"#/reference/05-tilt-arcade\">Use the resetGame example; extend the reset instructions if you add the target and score.</a></li>\n<li><a href=\"#/reference/10-classroom-help-test\">Later reuse: showReady is another named group of instructions.</a></li>\n</ul>\n<div class=\"admonition tip\">\n<p class=\"admonition-title\">Focus on this lesson</p>\n<p>Follow the instructions for any supplied blocks. You only need to explain the concepts in this lesson; extra spaces and labels in supplied function blocks are not additional vocabulary to learn.</p>\n</div>\n<p><a href=\"#/lessons\">Back to the teaching sequence</a></p>"
+        }
+      ],
+      "html": "<p><strong>Learning intention:</strong> Define a named group of instructions, call it and explain why reuse is useful.</p>\n<h2>Understand the concept</h2>\n<p>A function groups instructions under a name. Defining it specifies what it does. Calling it runs those instructions. The same function can be called from different places.</p>\n<h2>Connect it to the micro:bit</h2>\n<p><img alt=\"Startup or button A; Call resetGame; Run reset instructions.\" src=\"./_assets/concepts/07-functions.svg\" /></p>\n<p>Continue the tilt project. Put the reset instructions in one function and call it at startup and from button A. If both places need the same reset behaviour, you only need to edit the function once.</p>\n<h2>Read the example</h2>\n<p>This is <strong>pseudocode</strong> showing the order and structure of the MakeCode Blocks. It is not code to paste into the editor.</p>\n<pre><code class=\"language-text\">function resetGame:\n    set x to 2\n    set score to 0\n    clear screen\non start:\n    call resetGame\non button A pressed:\n    call resetGame\n</code></pre>\n<h2>Predict and discuss</h2>\n<p>Does defining resetGame run it? Where is it called? What changes at both call sites if you add an instruction inside it?</p>\n<h2>Apply it in your workbook</h2>\n<p>Create resetGame, move your reset instructions inside it and call it from startup and button A. Use a name that describes its purpose.</p>\n<p><strong>Evidence and explanation:</strong> Show the function and its two calls. Explain the difference between defining and calling it.</p>\n<p>Complete <strong>Tasks 7.1, 7.2 and 7.3</strong> in the <a href=\"https://docs.google.com/document/d/1TtgnkWvogK3TJ2bSEFirT5LDdON6QLlhlYuBmnWRdAc/edit?usp=drivesdk\" rel=\"noopener noreferrer\" target=\"_blank\">Google Docs pupil workbook</a>. Use the lesson heading to find your tasks.</p>\n<h2>Practical references</h2>\n<p>These guides retain their original project numbers; those numbers are not the new teaching lesson numbers. Use the relevant tasks described below.</p>\n<ul>\n<li><a href=\"#/reference/05-tilt-arcade\">Use the resetGame example; extend the reset instructions if you add the target and score.</a></li>\n<li><a href=\"#/reference/10-classroom-help-test\">Later reuse: showReady is another named group of instructions.</a></li>\n</ul>\n<div class=\"admonition tip\">\n<p class=\"admonition-title\">Focus on this lesson</p>\n<p>Follow the instructions for any supplied blocks. You only need to explain the concepts in this lesson; extra spaces and labels in supplied function blocks are not additional vocabulary to learn.</p>\n</div>\n<p><a href=\"#/lessons\">Back to the teaching sequence</a></p>"
+    },
+    {
+      "slug": "08-lists-indexing",
+      "title": "Lists and indexing",
+      "sections": [
+        {
+          "title": "Learning intention",
+          "html": "<p><strong>Learning intention:</strong> Read values from an ordered list using their positions.</p>"
+        },
+        {
+          "title": "Understand the concept",
+          "html": "<p>A list stores an ordered collection of values. An index identifies a position. The first item has index 0. List length is the number of items.</p>"
+        },
+        {
+          "title": "Connect it to the micro:bit",
+          "html": "<p><img alt=\"Read a button choice; Compare with list item; Move to next position.\" src=\"./_assets/concepts/08-lists-indexing.svg\" /></p>\n<p>Use the supplied memory-game framework to play and check a sequence. Here 0 represents A and 1 represents B. The example is the correct-answer part of the checker; the framework also handles wrong answers and playback.</p>"
+        },
+        {
+          "title": "Read the example",
+          "html": "<p>This is <strong>pseudocode</strong> showing the order and structure of the MakeCode Blocks. It is not code to paste into the editor.</p>\n<pre><code class=\"language-text\">set sequence to [0, 1, 0]\nset position to 0\nif choice = sequence[position]:\n    change position by 1\n    if position = length of sequence:\n        set accepting to false\n        show tick\n</code></pre>"
+        },
+        {
+          "title": "Predict and discuss",
+          "html": "<p>What is stored at index 1 in [0, 1, 0]? For a list of four items, what are the valid indexes?</p>"
+        },
+        {
+          "title": "Apply it in your workbook",
+          "html": "<p>Complete the checker using the supplied framework. In the A event, use the supplied checkChoice call with 0 in its space; in B, put 1 in its space. Keep those supplied blocks and focus on the list and its positions.</p>\n<p><strong>Evidence and explanation:</strong> Record tests for both sequence lengths. Explain why checking list length works better than always checking for 3.</p>\n<p>Complete <strong>Tasks 8.1, 8.2 and 8.3</strong> in the <a href=\"https://docs.google.com/document/d/1TtgnkWvogK3TJ2bSEFirT5LDdON6QLlhlYuBmnWRdAc/edit?usp=drivesdk\" rel=\"noopener noreferrer\" target=\"_blank\">Google Docs pupil workbook</a>. Use the lesson heading to find your tasks.</p>"
+        },
+        {
+          "title": "Practical references",
+          "html": "<p>These guides retain their original project numbers; those numbers are not the new teaching lesson numbers. Use the relevant tasks described below.</p>\n<ul>\n<li><a href=\"#/reference/06-memory-master\">Use the list setup, checking instructions and test table.</a></li>\n</ul>\n<div class=\"admonition tip\">\n<p class=\"admonition-title\">Focus on this lesson</p>\n<p>Follow the instructions for any supplied blocks. You only need to explain the concepts in this lesson; extra spaces and labels in supplied function blocks are not additional vocabulary to learn.</p>\n</div>\n<p><a href=\"#/lessons\">Back to the teaching sequence</a></p>"
+        }
+      ],
+      "html": "<p><strong>Learning intention:</strong> Read values from an ordered list using their positions.</p>\n<h2>Understand the concept</h2>\n<p>A list stores an ordered collection of values. An index identifies a position. The first item has index 0. List length is the number of items.</p>\n<h2>Connect it to the micro:bit</h2>\n<p><img alt=\"Read a button choice; Compare with list item; Move to next position.\" src=\"./_assets/concepts/08-lists-indexing.svg\" /></p>\n<p>Use the supplied memory-game framework to play and check a sequence. Here 0 represents A and 1 represents B. The example is the correct-answer part of the checker; the framework also handles wrong answers and playback.</p>\n<h2>Read the example</h2>\n<p>This is <strong>pseudocode</strong> showing the order and structure of the MakeCode Blocks. It is not code to paste into the editor.</p>\n<pre><code class=\"language-text\">set sequence to [0, 1, 0]\nset position to 0\nif choice = sequence[position]:\n    change position by 1\n    if position = length of sequence:\n        set accepting to false\n        show tick\n</code></pre>\n<h2>Predict and discuss</h2>\n<p>What is stored at index 1 in [0, 1, 0]? For a list of four items, what are the valid indexes?</p>\n<h2>Apply it in your workbook</h2>\n<p>Complete the checker using the supplied framework. In the A event, use the supplied checkChoice call with 0 in its space; in B, put 1 in its space. Keep those supplied blocks and focus on the list and its positions.</p>\n<p><strong>Evidence and explanation:</strong> Record tests for both sequence lengths. Explain why checking list length works better than always checking for 3.</p>\n<p>Complete <strong>Tasks 8.1, 8.2 and 8.3</strong> in the <a href=\"https://docs.google.com/document/d/1TtgnkWvogK3TJ2bSEFirT5LDdON6QLlhlYuBmnWRdAc/edit?usp=drivesdk\" rel=\"noopener noreferrer\" target=\"_blank\">Google Docs pupil workbook</a>. Use the lesson heading to find your tasks.</p>\n<h2>Practical references</h2>\n<p>These guides retain their original project numbers; those numbers are not the new teaching lesson numbers. Use the relevant tasks described below.</p>\n<ul>\n<li><a href=\"#/reference/06-memory-master\">Use the list setup, checking instructions and test table.</a></li>\n</ul>\n<div class=\"admonition tip\">\n<p class=\"admonition-title\">Focus on this lesson</p>\n<p>Follow the instructions for any supplied blocks. You only need to explain the concepts in this lesson; extra spaces and labels in supplied function blocks are not additional vocabulary to learn.</p>\n</div>\n<p><a href=\"#/lessons\">Back to the teaching sequence</a></p>"
+    },
+    {
+      "slug": "09-radio-communication",
+      "title": "Radio communication",
+      "sections": [
+        {
+          "title": "Learning intention",
+          "html": "<p><strong>Learning intention:</strong> Send and receive agreed messages between two micro:bits.</p>"
+        },
+        {
+          "title": "Understand the concept",
+          "html": "<p>Radio lets micro:bits exchange messages. Both programs need the same allocated radio group and must agree what each message means. A receive event starts when a message arrives.</p>"
+        },
+        {
+          "title": "Connect it to the micro:bit",
+          "html": "<p><img alt=\"Pupil sends HELP; Teacher receives HELP; Teacher replies OK.\" src=\"./_assets/concepts/09-radio-communication.svg\" /></p>\n<p>Pupil A sends HELP. Teacher B sends OK. The pupil displays a tick when OK arrives. Text must match exactly, including capitals. The counter records requests, not different pupils.</p>"
+        },
+        {
+          "title": "Read the example",
+          "html": "<p>This is <strong>pseudocode</strong> showing the order and structure of the MakeCode Blocks. It is not code to paste into the editor.</p>\n<pre><code class=\"language-text\">on radio received receivedString:\n    if receivedString = &quot;HELP&quot;:\n        change requests by 1\n        show string &quot;H&quot;\n</code></pre>"
+        },
+        {
+          "title": "Predict and discuss",
+          "html": "<p>Which event sends HELP? Which event handles it? Why can two boards with different groups fail to communicate?</p>"
+        },
+        {
+          "title": "Apply it in your workbook",
+          "html": "<p>Build the pupil and teacher help programs. Test the request, acknowledgement and repeated requests. Save them for Lesson 10.</p>\n<p><strong>Evidence and explanation:</strong> Draw the message journey, include both programs and record what happens after repeated A presses.</p>\n<p>Complete <strong>Tasks 9.1, 9.2 and 9.3</strong> in the <a href=\"https://docs.google.com/document/d/1TtgnkWvogK3TJ2bSEFirT5LDdON6QLlhlYuBmnWRdAc/edit?usp=drivesdk\" rel=\"noopener noreferrer\" target=\"_blank\">Google Docs pupil workbook</a>. Use the lesson heading to find your tasks.</p>"
+        },
+        {
+          "title": "Practical references",
+          "html": "<p>These guides retain their original project numbers; those numbers are not the new teaching lesson numbers. Use the relevant tasks described below.</p>\n<ul>\n<li><a href=\"#/reference/09-classroom-help\">Use the two-board help-system build and its request counter.</a></li>\n<li><a href=\"#/reference/07-wireless-rescue\">Additional reference for sending and receiving HELP and OK.</a></li>\n</ul>\n<p><a href=\"#/lessons\">Back to the teaching sequence</a></p>"
+        }
+      ],
+      "html": "<p><strong>Learning intention:</strong> Send and receive agreed messages between two micro:bits.</p>\n<h2>Understand the concept</h2>\n<p>Radio lets micro:bits exchange messages. Both programs need the same allocated radio group and must agree what each message means. A receive event starts when a message arrives.</p>\n<h2>Connect it to the micro:bit</h2>\n<p><img alt=\"Pupil sends HELP; Teacher receives HELP; Teacher replies OK.\" src=\"./_assets/concepts/09-radio-communication.svg\" /></p>\n<p>Pupil A sends HELP. Teacher B sends OK. The pupil displays a tick when OK arrives. Text must match exactly, including capitals. The counter records requests, not different pupils.</p>\n<h2>Read the example</h2>\n<p>This is <strong>pseudocode</strong> showing the order and structure of the MakeCode Blocks. It is not code to paste into the editor.</p>\n<pre><code class=\"language-text\">on radio received receivedString:\n    if receivedString = &quot;HELP&quot;:\n        change requests by 1\n        show string &quot;H&quot;\n</code></pre>\n<h2>Predict and discuss</h2>\n<p>Which event sends HELP? Which event handles it? Why can two boards with different groups fail to communicate?</p>\n<h2>Apply it in your workbook</h2>\n<p>Build the pupil and teacher help programs. Test the request, acknowledgement and repeated requests. Save them for Lesson 10.</p>\n<p><strong>Evidence and explanation:</strong> Draw the message journey, include both programs and record what happens after repeated A presses.</p>\n<p>Complete <strong>Tasks 9.1, 9.2 and 9.3</strong> in the <a href=\"https://docs.google.com/document/d/1TtgnkWvogK3TJ2bSEFirT5LDdON6QLlhlYuBmnWRdAc/edit?usp=drivesdk\" rel=\"noopener noreferrer\" target=\"_blank\">Google Docs pupil workbook</a>. Use the lesson heading to find your tasks.</p>\n<h2>Practical references</h2>\n<p>These guides retain their original project numbers; those numbers are not the new teaching lesson numbers. Use the relevant tasks described below.</p>\n<ul>\n<li><a href=\"#/reference/09-classroom-help\">Use the two-board help-system build and its request counter.</a></li>\n<li><a href=\"#/reference/07-wireless-rescue\">Additional reference for sending and receiving HELP and OK.</a></li>\n</ul>\n<p><a href=\"#/lessons\">Back to the teaching sequence</a></p>"
+    },
+    {
+      "slug": "10-testing-evaluation",
+      "title": "Integration, testing and evaluation",
+      "sections": [
+        {
+          "title": "Learning intention",
+          "html": "<p><strong>Learning intention:</strong> Combine earlier concepts, prevent duplicate requests and evaluate against requirements.</p>"
+        },
+        {
+          "title": "Understand the concept",
+          "html": "<p>A requirement says what the system must do. A useful test has an action, an expected result and an actual result. Debugging finds and repairs faults; evaluation uses evidence to judge how well requirements were met.</p>"
+        },
+        {
+          "title": "Connect it to the micro:bit",
+          "html": "<p><img alt=\"Press A repeatedly; Check waiting state; Send one request.\" src=\"./_assets/concepts/10-testing-evaluation.svg\" /></p>\n<p>Set waiting to false at startup. Setting it true before sending closes the opportunity for another request while waiting. Keep the teacher counter so you can prove that repeated presses do not send duplicates.</p>"
+        },
+        {
+          "title": "Read the example",
+          "html": "<p>This is <strong>pseudocode</strong> showing the order and structure of the MakeCode Blocks. It is not code to paste into the editor.</p>\n<pre><code class=\"language-text\">on button A pressed:\n    if NOT waiting:\n        set waiting to true\n        radio send string &quot;HELP&quot;\n        show question mark\non radio received receivedString:\n    if receivedString = &quot;OK&quot;:\n        set waiting to false\n        show tick\n</code></pre>"
+        },
+        {
+          "title": "Predict and discuss",
+          "html": "<p>After one request and three more A presses, what should the teacher count show? What must happen before another request is allowed?</p>"
+        },
+        {
+          "title": "Apply it in your workbook",
+          "html": "<p>Improve the Lesson 9 programs, reuse showReady and run the full test table. Record faults and retests.</p>\n<p><strong>Evidence and explanation:</strong> Include expected and actual results, both final programs, a repair if needed, and an evaluation naming one limitation.</p>\n<p>Complete <strong>Tasks 10.1, 10.2 and 10.3</strong> in the <a href=\"https://docs.google.com/document/d/1TtgnkWvogK3TJ2bSEFirT5LDdON6QLlhlYuBmnWRdAc/edit?usp=drivesdk\" rel=\"noopener noreferrer\" target=\"_blank\">Google Docs pupil workbook</a>. Use the lesson heading to find your tasks.</p>"
+        },
+        {
+          "title": "Practical references",
+          "html": "<p>These guides retain their original project numbers; those numbers are not the new teaching lesson numbers. Use the relevant tasks described below.</p>\n<ul>\n<li><a href=\"#/reference/10-classroom-help-test\">Use the improvement tasks and complete test table.</a></li>\n</ul>\n<p><a href=\"#/lessons\">Back to the teaching sequence</a></p>"
+        }
+      ],
+      "html": "<p><strong>Learning intention:</strong> Combine earlier concepts, prevent duplicate requests and evaluate against requirements.</p>\n<h2>Understand the concept</h2>\n<p>A requirement says what the system must do. A useful test has an action, an expected result and an actual result. Debugging finds and repairs faults; evaluation uses evidence to judge how well requirements were met.</p>\n<h2>Connect it to the micro:bit</h2>\n<p><img alt=\"Press A repeatedly; Check waiting state; Send one request.\" src=\"./_assets/concepts/10-testing-evaluation.svg\" /></p>\n<p>Set waiting to false at startup. Setting it true before sending closes the opportunity for another request while waiting. Keep the teacher counter so you can prove that repeated presses do not send duplicates.</p>\n<h2>Read the example</h2>\n<p>This is <strong>pseudocode</strong> showing the order and structure of the MakeCode Blocks. It is not code to paste into the editor.</p>\n<pre><code class=\"language-text\">on button A pressed:\n    if NOT waiting:\n        set waiting to true\n        radio send string &quot;HELP&quot;\n        show question mark\non radio received receivedString:\n    if receivedString = &quot;OK&quot;:\n        set waiting to false\n        show tick\n</code></pre>\n<h2>Predict and discuss</h2>\n<p>After one request and three more A presses, what should the teacher count show? What must happen before another request is allowed?</p>\n<h2>Apply it in your workbook</h2>\n<p>Improve the Lesson 9 programs, reuse showReady and run the full test table. Record faults and retests.</p>\n<p><strong>Evidence and explanation:</strong> Include expected and actual results, both final programs, a repair if needed, and an evaluation naming one limitation.</p>\n<p>Complete <strong>Tasks 10.1, 10.2 and 10.3</strong> in the <a href=\"https://docs.google.com/document/d/1TtgnkWvogK3TJ2bSEFirT5LDdON6QLlhlYuBmnWRdAc/edit?usp=drivesdk\" rel=\"noopener noreferrer\" target=\"_blank\">Google Docs pupil workbook</a>. Use the lesson heading to find your tasks.</p>\n<h2>Practical references</h2>\n<p>These guides retain their original project numbers; those numbers are not the new teaching lesson numbers. Use the relevant tasks described below.</p>\n<ul>\n<li><a href=\"#/reference/10-classroom-help-test\">Use the improvement tasks and complete test table.</a></li>\n</ul>\n<p><a href=\"#/lessons\">Back to the teaching sequence</a></p>"
+    }
+  ],
+  "references": [
+    {
+      "slug": "01-pocket-personality",
+      "title": "Pocket personality",
+      "sections": [
+        {
+          "title": "Learning intention",
+          "html": "<p><strong>Learning intention:</strong> Program a character that reacts to buttons using inputs, events and sequence.</p>\n<p><strong>Key ideas:</strong> Events; sequence; inputs; processing; outputs</p>\n<p><strong>Time:</strong> 55 minutes.</p>"
+        },
+        {
+          "title": "Related teaching pages",
+          "html": "<p>This is a practical reference with its original project number. Your teacher will choose the relevant tasks for the new teaching sequence.</p>\n<ul>\n<li><a href=\"#/lesson/01-inputs-events-sequence\">Lesson 1: Inputs, events and sequence</a></li>\n</ul>"
+        },
+        {
+          "title": "Before you start",
+          "html": "<ul>\n<li>Work in <a href=\"https://makecode.microbit.org/\" rel=\"noopener noreferrer\" target=\"_blank\"><strong>MakeCode Blocks</strong></a>.</li>\n<li>Use the exact project and variable names below. <code>=</code> in a condition means \"is equal to\".</li>\n<li><code>set</code> replaces a stored value; <code>change by</code> adds to the current value.</li>\n<li>Put a block <strong>inside</strong> a condition or loop when the instruction says so. Indentation matters.</li>\n<li>If the task uses radio, both boards need power and the same allocated group. No internet or Bluetooth pairing is needed between the boards.</li>\n<li>Keep the board close to the desk. Do not throw it, pull its USB cable or cover it with metal.</li>\n</ul>"
+        },
+        {
+          "title": "Task 1: Start your project",
+          "html": "<ol>\n<li>Open <a href=\"https://makecode.microbit.org/\" rel=\"noopener noreferrer\" target=\"_blank\">MakeCode for micro:bit</a> and choose New Project. Name it S1-01-Personality. Stay in Blocks.</li>\n<li>Keep on start. Remove the empty forever block by dragging it back into the toolbox.</li>\n<li>From Basic, put show icon inside on start. Choose a heart. The start event runs when the program starts or the board resets.</li>\n</ol>"
+        },
+        {
+          "title": "Task 2: Create two button sequences",
+          "html": "<ol>\n<li>From Input, add on button A pressed. Inside it, show a happy face, pause 500 ms, then show a heart.</li>\n<li>Add another button event and select B. Inside it, show a sad face, pause 500 ms, then show a diamond.</li>\n<li>Predict the image order for each button, then test in the simulator.</li>\n<li>Swap the two images in one event. Predict and test the difference, then restore your chosen order.</li>\n</ol>"
+        },
+        {
+          "title": "Task 3: Use the real micro:bit",
+          "html": "<ol>\n<li>Connect the board with a USB data cable. Follow the download instructions in the Getting Started guide.</li>\n<li>Try each button separately. Wait for its sequence to finish before trying the other button.</li>\n<li>Change the startup icon and the two button reactions to suit your character. Keep both button events.</li>\n<li>Save your project and download a backup .hex file. Complete workbook lesson 1.</li>\n</ol>"
+        },
+        {
+          "title": "Test your program",
+          "html": "<table>\n<thead>\n<tr>\n<th>Test</th>\n<th>Expected result</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Reset the board</td>\n<td>Your chosen startup icon appears.</td>\n</tr>\n<tr>\n<td>Press A</td>\n<td>Happy face, pause, then heart.</td>\n</tr>\n<tr>\n<td>Press B</td>\n<td>Sad face, pause, then diamond.</td>\n</tr>\n</tbody>\n</table>"
+        },
+        {
+          "title": "Complete your workbook",
+          "html": "<ul>\n<li>Screenshot: All three event blocks: startup and both complete button sequences.</li>\n</ul>\n<p>Answer these questions in your own words:</p>\n<ol>\n<li>Name two inputs and one output in this program.</li>\n<li>What is an event? Give an example from your code.</li>\n<li>Why does the order of images and pauses inside a button event matter?</li>\n</ol>"
+        },
+        {
+          "title": "Optional challenge",
+          "html": "<p>Add an A+B event that shows your character name. Test it after the other animations finish.</p>"
+        },
+        {
+          "title": "Before you leave",
+          "html": "<ul>\n<li>Save the named project and a .hex backup.</li>\n<li>Paste readable screenshots into this lesson's workbook section.</li>\n<li>Record actual test results and any repair.</li>\n</ul>"
+        }
+      ],
+      "html": "<p><strong>Learning intention:</strong> Program a character that reacts to buttons using inputs, events and sequence.</p>\n<p><strong>Key ideas:</strong> Events; sequence; inputs; processing; outputs</p>\n<p><strong>Time:</strong> 55 minutes.</p>\n<h2>Related teaching pages</h2>\n<p>This is a practical reference with its original project number. Your teacher will choose the relevant tasks for the new teaching sequence.</p>\n<ul>\n<li><a href=\"#/lesson/01-inputs-events-sequence\">Lesson 1: Inputs, events and sequence</a></li>\n</ul>\n<h2>Before you start</h2>\n<ul>\n<li>Work in <a href=\"https://makecode.microbit.org/\" rel=\"noopener noreferrer\" target=\"_blank\"><strong>MakeCode Blocks</strong></a>.</li>\n<li>Use the exact project and variable names below. <code>=</code> in a condition means \"is equal to\".</li>\n<li><code>set</code> replaces a stored value; <code>change by</code> adds to the current value.</li>\n<li>Put a block <strong>inside</strong> a condition or loop when the instruction says so. Indentation matters.</li>\n<li>If the task uses radio, both boards need power and the same allocated group. No internet or Bluetooth pairing is needed between the boards.</li>\n<li>Keep the board close to the desk. Do not throw it, pull its USB cable or cover it with metal.</li>\n</ul>\n<h2>Task 1: Start your project</h2>\n<ol>\n<li>Open <a href=\"https://makecode.microbit.org/\" rel=\"noopener noreferrer\" target=\"_blank\">MakeCode for micro:bit</a> and choose New Project. Name it S1-01-Personality. Stay in Blocks.</li>\n<li>Keep on start. Remove the empty forever block by dragging it back into the toolbox.</li>\n<li>From Basic, put show icon inside on start. Choose a heart. The start event runs when the program starts or the board resets.</li>\n</ol>\n<h2>Task 2: Create two button sequences</h2>\n<ol>\n<li>From Input, add on button A pressed. Inside it, show a happy face, pause 500 ms, then show a heart.</li>\n<li>Add another button event and select B. Inside it, show a sad face, pause 500 ms, then show a diamond.</li>\n<li>Predict the image order for each button, then test in the simulator.</li>\n<li>Swap the two images in one event. Predict and test the difference, then restore your chosen order.</li>\n</ol>\n<h2>Task 3: Use the real micro:bit</h2>\n<ol>\n<li>Connect the board with a USB data cable. Follow the download instructions in the Getting Started guide.</li>\n<li>Try each button separately. Wait for its sequence to finish before trying the other button.</li>\n<li>Change the startup icon and the two button reactions to suit your character. Keep both button events.</li>\n<li>Save your project and download a backup .hex file. Complete workbook lesson 1.</li>\n</ol>\n<h2>Test your program</h2>\n<table>\n<thead>\n<tr>\n<th>Test</th>\n<th>Expected result</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Reset the board</td>\n<td>Your chosen startup icon appears.</td>\n</tr>\n<tr>\n<td>Press A</td>\n<td>Happy face, pause, then heart.</td>\n</tr>\n<tr>\n<td>Press B</td>\n<td>Sad face, pause, then diamond.</td>\n</tr>\n</tbody>\n</table>\n<h2>Complete your workbook</h2>\n<ul>\n<li>Screenshot: All three event blocks: startup and both complete button sequences.</li>\n</ul>\n<p>Answer these questions in your own words:</p>\n<ol>\n<li>Name two inputs and one output in this program.</li>\n<li>What is an event? Give an example from your code.</li>\n<li>Why does the order of images and pauses inside a button event matter?</li>\n</ol>\n<h2>Optional challenge</h2>\n<p>Add an A+B event that shows your character name. Test it after the other animations finish.</p>\n<h2>Before you leave</h2>\n<ul>\n<li>Save the named project and a .hex backup.</li>\n<li>Paste readable screenshots into this lesson's workbook section.</li>\n<li>Record actual test results and any repair.</li>\n</ul>"
+    },
+    {
+      "slug": "02-unfair-dice",
+      "title": "The unfair dice challenge",
+      "sections": [
+        {
+          "title": "Learning intention",
+          "html": "<p><strong>Learning intention:</strong> Find a faulty dice rule and build a dice with six equally possible outcomes.</p>\n<p><strong>Key ideas:</strong> Variables; random numbers; selection; debugging</p>\n<p><strong>Time:</strong> 55 minutes.</p>"
+        },
+        {
+          "title": "Related teaching pages",
+          "html": "<p>This is a practical reference with its original project number. Your teacher will choose the relevant tasks for the new teaching sequence.</p>\n<ul>\n<li><a href=\"#/lesson/02-variables-random-numbers\">Lesson 2: Variables and random numbers</a></li>\n<li><a href=\"#/lesson/03-selection-comparisons\">Lesson 3: Selection and comparisons</a></li>\n</ul>"
+        },
+        {
+          "title": "Before you start",
+          "html": "<ul>\n<li>Work in <a href=\"https://makecode.microbit.org/\" rel=\"noopener noreferrer\" target=\"_blank\"><strong>MakeCode Blocks</strong></a>.</li>\n<li>Use the exact project and variable names below. <code>=</code> in a condition means \"is equal to\".</li>\n<li><code>set</code> replaces a stored value; <code>change by</code> adds to the current value.</li>\n<li>Put a block <strong>inside</strong> a condition or loop when the instruction says so. Indentation matters.</li>\n<li>If the task uses radio, both boards need power and the same allocated group. No internet or Bluetooth pairing is needed between the boards.</li>\n<li>Keep the board close to the desk. Do not throw it, pull its USB cable or cover it with metal.</li>\n</ul>"
+        },
+        {
+          "title": "Task 1: Investigate a faulty dice",
+          "html": "<ol>\n<li>Create S1-02-Dice. From Variables, make a variable called roll.</li>\n<li>In on shake, set roll to pick random 1 to 6. Find pick random in Math.</li>\n<li>Below that, add if then from Logic. Set its condition to roll = 6. Inside it, set roll to 1.</li>\n<li>After the if, add show number roll. Predict which number can never appear and which has an extra chance.</li>\n<li>Shake the simulator repeatedly. Explain the fault before removing anything. Take a screenshot of this faulty version.</li>\n</ol>"
+        },
+        {
+          "title": "Task 2: Repair the rule",
+          "html": "<ol>\n<li>Delete the whole if block, leaving set roll to pick random 1 to 6, followed by show number roll.</li>\n<li>Download and try the corrected program. Wait for each roll to finish before shaking again.</li>\n<li>Make a tally for 30 rolls in your workbook. Record every result, including repeated results.</li>\n<li>Check that no result is below 1 or above 6. You do not need all six tallies to be equal.</li>\n</ol>"
+        },
+        {
+          "title": "Task 3: Explain and save",
+          "html": "<ol>\n<li>Use the variable roll in your explanation: it stores the chosen number until it is changed.</li>\n<li>Explain why 30 rolls cannot prove that a dice is fair.</li>\n<li>Save the corrected project and backup .hex. Add a second screenshot showing the repaired code.</li>\n</ol>"
+        },
+        {
+          "title": "Test your program",
+          "html": "<table>\n<thead>\n<tr>\n<th>Test</th>\n<th>Expected result</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Read the faulty rule</td>\n<td>A roll of 6 is changed to 1; 6 cannot be displayed.</td>\n</tr>\n<tr>\n<td>Inspect corrected random limits</td>\n<td>Lower limit is 1; upper limit is 6.</td>\n</tr>\n<tr>\n<td>Carry out 30 corrected rolls</td>\n<td>Every result is an integer from 1 to 6.</td>\n</tr>\n<tr>\n<td>Add all six tally counts</td>\n<td>The total is 30.</td>\n</tr>\n</tbody>\n</table>"
+        },
+        {
+          "title": "Complete your workbook",
+          "html": "<ul>\n<li>Screenshot: Faulty dice program before the repair.</li>\n<li>Screenshot: Corrected dice program.</li>\n</ul>\n<p>Answer these questions in your own words:</p>\n<ol>\n<li>Explain why the faulty version favours 1.</li>\n<li>What information does roll store?</li>\n<li>Why might a fair dice show more 4s than 2s in 30 rolls?</li>\n</ol>"
+        },
+        {
+          "title": "Optional challenge",
+          "html": "<p>Add on button A pressed to show the previous roll without generating a new one.</p>"
+        },
+        {
+          "title": "Before you leave",
+          "html": "<ul>\n<li>Save the named project and a .hex backup.</li>\n<li>Paste readable screenshots into this lesson's workbook section.</li>\n<li>Record actual test results and any repair.</li>\n</ul>"
+        }
+      ],
+      "html": "<p><strong>Learning intention:</strong> Find a faulty dice rule and build a dice with six equally possible outcomes.</p>\n<p><strong>Key ideas:</strong> Variables; random numbers; selection; debugging</p>\n<p><strong>Time:</strong> 55 minutes.</p>\n<h2>Related teaching pages</h2>\n<p>This is a practical reference with its original project number. Your teacher will choose the relevant tasks for the new teaching sequence.</p>\n<ul>\n<li><a href=\"#/lesson/02-variables-random-numbers\">Lesson 2: Variables and random numbers</a></li>\n<li><a href=\"#/lesson/03-selection-comparisons\">Lesson 3: Selection and comparisons</a></li>\n</ul>\n<h2>Before you start</h2>\n<ul>\n<li>Work in <a href=\"https://makecode.microbit.org/\" rel=\"noopener noreferrer\" target=\"_blank\"><strong>MakeCode Blocks</strong></a>.</li>\n<li>Use the exact project and variable names below. <code>=</code> in a condition means \"is equal to\".</li>\n<li><code>set</code> replaces a stored value; <code>change by</code> adds to the current value.</li>\n<li>Put a block <strong>inside</strong> a condition or loop when the instruction says so. Indentation matters.</li>\n<li>If the task uses radio, both boards need power and the same allocated group. No internet or Bluetooth pairing is needed between the boards.</li>\n<li>Keep the board close to the desk. Do not throw it, pull its USB cable or cover it with metal.</li>\n</ul>\n<h2>Task 1: Investigate a faulty dice</h2>\n<ol>\n<li>Create S1-02-Dice. From Variables, make a variable called roll.</li>\n<li>In on shake, set roll to pick random 1 to 6. Find pick random in Math.</li>\n<li>Below that, add if then from Logic. Set its condition to roll = 6. Inside it, set roll to 1.</li>\n<li>After the if, add show number roll. Predict which number can never appear and which has an extra chance.</li>\n<li>Shake the simulator repeatedly. Explain the fault before removing anything. Take a screenshot of this faulty version.</li>\n</ol>\n<h2>Task 2: Repair the rule</h2>\n<ol>\n<li>Delete the whole if block, leaving set roll to pick random 1 to 6, followed by show number roll.</li>\n<li>Download and try the corrected program. Wait for each roll to finish before shaking again.</li>\n<li>Make a tally for 30 rolls in your workbook. Record every result, including repeated results.</li>\n<li>Check that no result is below 1 or above 6. You do not need all six tallies to be equal.</li>\n</ol>\n<h2>Task 3: Explain and save</h2>\n<ol>\n<li>Use the variable roll in your explanation: it stores the chosen number until it is changed.</li>\n<li>Explain why 30 rolls cannot prove that a dice is fair.</li>\n<li>Save the corrected project and backup .hex. Add a second screenshot showing the repaired code.</li>\n</ol>\n<h2>Test your program</h2>\n<table>\n<thead>\n<tr>\n<th>Test</th>\n<th>Expected result</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Read the faulty rule</td>\n<td>A roll of 6 is changed to 1; 6 cannot be displayed.</td>\n</tr>\n<tr>\n<td>Inspect corrected random limits</td>\n<td>Lower limit is 1; upper limit is 6.</td>\n</tr>\n<tr>\n<td>Carry out 30 corrected rolls</td>\n<td>Every result is an integer from 1 to 6.</td>\n</tr>\n<tr>\n<td>Add all six tally counts</td>\n<td>The total is 30.</td>\n</tr>\n</tbody>\n</table>\n<h2>Complete your workbook</h2>\n<ul>\n<li>Screenshot: Faulty dice program before the repair.</li>\n<li>Screenshot: Corrected dice program.</li>\n</ul>\n<p>Answer these questions in your own words:</p>\n<ol>\n<li>Explain why the faulty version favours 1.</li>\n<li>What information does roll store?</li>\n<li>Why might a fair dice show more 4s than 2s in 30 rolls?</li>\n</ol>\n<h2>Optional challenge</h2>\n<p>Add on button A pressed to show the previous roll without generating a new one.</p>\n<h2>Before you leave</h2>\n<ul>\n<li>Save the named project and a .hex backup.</li>\n<li>Paste readable screenshots into this lesson's workbook section.</li>\n<li>Record actual test results and any repair.</li>\n</ul>"
+    },
+    {
+      "slug": "03-reaction-timer",
+      "title": "Beat the reaction timer",
+      "sections": [
+        {
+          "title": "Learning intention",
+          "html": "<p><strong>Learning intention:</strong> Measure a reaction time and detect an early press.</p>\n<p><strong>Key ideas:</strong> State; multiple variables; selection; time calculations</p>\n<p><strong>Time:</strong> 55 minutes.</p>"
+        },
+        {
+          "title": "Related teaching pages",
+          "html": "<p>This is a practical reference with its original project number. Your teacher will choose the relevant tasks for the new teaching sequence.</p>\n<ul>\n<li><a href=\"#/lesson/03-selection-comparisons\">Selection and comparisons</a></li>\n<li><a href=\"#/lesson/05-boolean-logic-state\">Boolean logic and state</a></li>\n</ul>"
+        },
+        {
+          "title": "Before you start",
+          "html": "<ul>\n<li>Work in <a href=\"https://makecode.microbit.org/\" rel=\"noopener noreferrer\" target=\"_blank\"><strong>MakeCode Blocks</strong></a>.</li>\n<li>Use the exact project and variable names below. <code>=</code> in a condition means \"is equal to\".</li>\n<li><code>set</code> replaces a stored value; <code>change by</code> adds to the current value.</li>\n<li>Put a block <strong>inside</strong> a condition or loop when the instruction says so. Indentation matters.</li>\n<li>If the task uses radio, both boards need power and the same allocated group. No internet or Bluetooth pairing is needed between the boards.</li>\n<li>Keep the board close to the desk. Do not throw it, pull its USB cable or cover it with metal.</li>\n</ul>"
+        },
+        {
+          "title": "Task 1: Load the starter",
+          "html": "<ol>\n<li>Create S1-03-Reaction. Your teacher supplies 03-reaction-starter.ts. Follow the JavaScript-to-Blocks steps in Getting Started.</li>\n<li>Read the starter: B begins a round; phase is 0 when idle, 1 while waiting, and 2 when the signal is showing.</li>\n<li>The starter already waits a random 1000 to 3000 ms. Do not change its B event yet.</li>\n</ol>"
+        },
+        {
+          "title": "Task 2: Finish the A event",
+          "html": "<ol>\n<li>Add on button A pressed. Inside it, add if / else if from Logic using the small plus button on the if block.</li>\n<li>First condition: phase = 1. Inside, set phase to 0, then show string EARLY.</li>\n<li>Second condition: phase = 2. Inside, set reactionTime to running time (ms) minus startTime. Find running time under Input, more.</li>\n<li>Still inside the second branch, set phase to 0, then show number reactionTime.</li>\n<li>Leave out an else branch. A should do nothing when phase is 0.</li>\n</ol>"
+        },
+        {
+          "title": "Task 3: Test the timer",
+          "html": "<ol>\n<li>Press B, wait for the diamond, then press A. The displayed value is your time in milliseconds.</li>\n<li>Start another round. Press A before the diamond: EARLY should appear and the round should stop.</li>\n<li>Complete five valid attempts in your workbook. Restart only after a result or message finishes.</li>\n<li>Keep the board on the desk so everyone has the same starting setup. Save and screenshot all event blocks.</li>\n</ol>"
+        },
+        {
+          "title": "Test your program",
+          "html": "<table>\n<thead>\n<tr>\n<th>Test</th>\n<th>Expected result</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Press A before starting</td>\n<td>No reaction time is displayed.</td>\n</tr>\n<tr>\n<td>Press B, wait for diamond, press A</td>\n<td>A non-negative reaction time in ms appears.</td>\n</tr>\n<tr>\n<td>Press B then press A before signal</td>\n<td>EARLY appears; no later diamond starts that round.</td>\n</tr>\n<tr>\n<td>Press B again during waiting</td>\n<td>The existing round continues; no extra round starts.</td>\n</tr>\n</tbody>\n</table>"
+        },
+        {
+          "title": "Complete your workbook",
+          "html": "<ul>\n<li>Screenshot: All event blocks and startup variables. Split into two readable images if necessary.</li>\n</ul>\n<p>Answer these questions in your own words:</p>\n<ol>\n<li>What do phase values 0, 1 and 2 mean?</li>\n<li>Why calculate running time minus startTime?</li>\n<li>Why use a random waiting time?</li>\n</ol>"
+        },
+        {
+          "title": "Optional challenge",
+          "html": "<p>Add bestTime, starting at 99999. Update it only when a valid reactionTime is smaller. Show it with A+B.</p>"
+        },
+        {
+          "title": "Before you leave",
+          "html": "<ul>\n<li>Save the named project and a .hex backup.</li>\n<li>Paste readable screenshots into this lesson's workbook section.</li>\n<li>Record actual test results and any repair.</li>\n</ul>"
+        }
+      ],
+      "html": "<p><strong>Learning intention:</strong> Measure a reaction time and detect an early press.</p>\n<p><strong>Key ideas:</strong> State; multiple variables; selection; time calculations</p>\n<p><strong>Time:</strong> 55 minutes.</p>\n<h2>Related teaching pages</h2>\n<p>This is a practical reference with its original project number. Your teacher will choose the relevant tasks for the new teaching sequence.</p>\n<ul>\n<li><a href=\"#/lesson/03-selection-comparisons\">Selection and comparisons</a></li>\n<li><a href=\"#/lesson/05-boolean-logic-state\">Boolean logic and state</a></li>\n</ul>\n<h2>Before you start</h2>\n<ul>\n<li>Work in <a href=\"https://makecode.microbit.org/\" rel=\"noopener noreferrer\" target=\"_blank\"><strong>MakeCode Blocks</strong></a>.</li>\n<li>Use the exact project and variable names below. <code>=</code> in a condition means \"is equal to\".</li>\n<li><code>set</code> replaces a stored value; <code>change by</code> adds to the current value.</li>\n<li>Put a block <strong>inside</strong> a condition or loop when the instruction says so. Indentation matters.</li>\n<li>If the task uses radio, both boards need power and the same allocated group. No internet or Bluetooth pairing is needed between the boards.</li>\n<li>Keep the board close to the desk. Do not throw it, pull its USB cable or cover it with metal.</li>\n</ul>\n<h2>Task 1: Load the starter</h2>\n<ol>\n<li>Create S1-03-Reaction. Your teacher supplies 03-reaction-starter.ts. Follow the JavaScript-to-Blocks steps in Getting Started.</li>\n<li>Read the starter: B begins a round; phase is 0 when idle, 1 while waiting, and 2 when the signal is showing.</li>\n<li>The starter already waits a random 1000 to 3000 ms. Do not change its B event yet.</li>\n</ol>\n<h2>Task 2: Finish the A event</h2>\n<ol>\n<li>Add on button A pressed. Inside it, add if / else if from Logic using the small plus button on the if block.</li>\n<li>First condition: phase = 1. Inside, set phase to 0, then show string EARLY.</li>\n<li>Second condition: phase = 2. Inside, set reactionTime to running time (ms) minus startTime. Find running time under Input, more.</li>\n<li>Still inside the second branch, set phase to 0, then show number reactionTime.</li>\n<li>Leave out an else branch. A should do nothing when phase is 0.</li>\n</ol>\n<h2>Task 3: Test the timer</h2>\n<ol>\n<li>Press B, wait for the diamond, then press A. The displayed value is your time in milliseconds.</li>\n<li>Start another round. Press A before the diamond: EARLY should appear and the round should stop.</li>\n<li>Complete five valid attempts in your workbook. Restart only after a result or message finishes.</li>\n<li>Keep the board on the desk so everyone has the same starting setup. Save and screenshot all event blocks.</li>\n</ol>\n<h2>Test your program</h2>\n<table>\n<thead>\n<tr>\n<th>Test</th>\n<th>Expected result</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Press A before starting</td>\n<td>No reaction time is displayed.</td>\n</tr>\n<tr>\n<td>Press B, wait for diamond, press A</td>\n<td>A non-negative reaction time in ms appears.</td>\n</tr>\n<tr>\n<td>Press B then press A before signal</td>\n<td>EARLY appears; no later diamond starts that round.</td>\n</tr>\n<tr>\n<td>Press B again during waiting</td>\n<td>The existing round continues; no extra round starts.</td>\n</tr>\n</tbody>\n</table>\n<h2>Complete your workbook</h2>\n<ul>\n<li>Screenshot: All event blocks and startup variables. Split into two readable images if necessary.</li>\n</ul>\n<p>Answer these questions in your own words:</p>\n<ol>\n<li>What do phase values 0, 1 and 2 mean?</li>\n<li>Why calculate running time minus startTime?</li>\n<li>Why use a random waiting time?</li>\n</ol>\n<h2>Optional challenge</h2>\n<p>Add bestTime, starting at 99999. Update it only when a valid reactionTime is smaller. Show it with A+B.</p>\n<h2>Before you leave</h2>\n<ul>\n<li>Save the named project and a .hex backup.</li>\n<li>Paste readable screenshots into this lesson's workbook section.</li>\n<li>Record actual test results and any repair.</li>\n</ul>"
+    },
+    {
+      "slug": "04-treasure-alarm",
+      "title": "Protect the treasure",
+      "sections": [
+        {
+          "title": "Learning intention",
+          "html": "<p><strong>Learning intention:</strong> Use a measured light threshold to trigger an armed alarm.</p>\n<p><strong>Key ideas:</strong> Real-world input; thresholds; Boolean variables; repetition</p>\n<p><strong>Time:</strong> 55 minutes.</p>"
+        },
+        {
+          "title": "Related teaching pages",
+          "html": "<p>This is a practical reference with its original project number. Your teacher will choose the relevant tasks for the new teaching sequence.</p>\n<ul>\n<li><a href=\"#/lesson/04-iteration\">Lesson 4: Iteration</a></li>\n<li><a href=\"#/lesson/05-boolean-logic-state\">Lesson 5: Boolean logic and state</a></li>\n</ul>"
+        },
+        {
+          "title": "Before you start",
+          "html": "<ul>\n<li>Work in <a href=\"https://makecode.microbit.org/\" rel=\"noopener noreferrer\" target=\"_blank\"><strong>MakeCode Blocks</strong></a>.</li>\n<li>Use the exact project and variable names below. <code>=</code> in a condition means \"is equal to\".</li>\n<li><code>set</code> replaces a stored value; <code>change by</code> adds to the current value.</li>\n<li>Put a block <strong>inside</strong> a condition or loop when the instruction says so. Indentation matters.</li>\n<li>If the task uses radio, both boards need power and the same allocated group. No internet or Bluetooth pairing is needed between the boards.</li>\n<li>Keep the board close to the desk. Do not throw it, pull its USB cable or cover it with metal.</li>\n</ul>"
+        },
+        {
+          "title": "Task 1: Measure the light",
+          "html": "<ol>\n<li>Create S1-04-Alarm. Add on button A+B pressed containing show number light level. Find light level in Input.</li>\n<li>Download. Cover the front LED display with your hand, press A+B and record the reading. Uncover it and repeat.</li>\n<li>The display also senses light. Use a threshold between your covered and uncovered readings. Do not assume everyone needs the same number.</li>\n</ol>"
+        },
+        {
+          "title": "Task 2: Set up the alarm",
+          "html": "<ol>\n<li>Create variables armed, triggered and threshold. In on start, set armed to false, triggered to false and threshold to your chosen number. Find true and false in Logic.</li>\n<li>In on button A pressed: clear screen, set triggered to false, then set armed to true.</li>\n<li>In on button B pressed: set armed to false, set triggered to false, then clear screen.</li>\n<li>In forever, add if armed AND light level &gt; threshold then set triggered to true. Build AND using Logic.</li>\n</ol>"
+        },
+        {
+          "title": "Task 3: Make a warning that stays on",
+          "html": "<ol>\n<li>Below that if, still inside forever, add another if: armed AND triggered.</li>\n<li>Inside, show icon No (cross), pause 200 ms, clear screen, pause 200 ms.</li>\n<li>This is a visual alarm. No speaker is required. It keeps flashing even if the light level drops again.</li>\n<li>Cover the board before pressing A to arm it, then uncover it. B must stop the alarm. Leave the A+B light reader for calibration while disarmed.</li>\n<li>Save, test and record your threshold and readings in the workbook.</li>\n</ol>"
+        },
+        {
+          "title": "Test your program",
+          "html": "<table>\n<thead>\n<tr>\n<th>Test</th>\n<th>Expected result</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Disarmed; expose display to light</td>\n<td>No flashing alarm.</td>\n</tr>\n<tr>\n<td>Cover display, then press A</td>\n<td>Board arms without triggering if reading is below threshold.</td>\n</tr>\n<tr>\n<td>Uncover armed board</td>\n<td>Warning starts flashing.</td>\n</tr>\n<tr>\n<td>Cover again after triggering</td>\n<td>Warning continues.</td>\n</tr>\n<tr>\n<td>Press B while flashing</td>\n<td>Alarm stops within one flash cycle, allowing for an in-progress pause.</td>\n</tr>\n</tbody>\n</table>"
+        },
+        {
+          "title": "Complete your workbook",
+          "html": "<ul>\n<li>Screenshot: All event blocks and the complete forever loop.</li>\n</ul>\n<p>Answer these questions in your own words:</p>\n<ol>\n<li>What is a threshold?</li>\n<li>Why does triggered stay true after the board is covered again?</li>\n<li>Explain the input, processing and output.</li>\n</ol>"
+        },
+        {
+          "title": "Optional challenge",
+          "html": "<p>After testing, choose a different threshold and record one example of a false alarm or missed opening.</p>"
+        },
+        {
+          "title": "Before you leave",
+          "html": "<ul>\n<li>Save the named project and a .hex backup.</li>\n<li>Paste readable screenshots into this lesson's workbook section.</li>\n<li>Record actual test results and any repair.</li>\n</ul>"
+        }
+      ],
+      "html": "<p><strong>Learning intention:</strong> Use a measured light threshold to trigger an armed alarm.</p>\n<p><strong>Key ideas:</strong> Real-world input; thresholds; Boolean variables; repetition</p>\n<p><strong>Time:</strong> 55 minutes.</p>\n<h2>Related teaching pages</h2>\n<p>This is a practical reference with its original project number. Your teacher will choose the relevant tasks for the new teaching sequence.</p>\n<ul>\n<li><a href=\"#/lesson/04-iteration\">Lesson 4: Iteration</a></li>\n<li><a href=\"#/lesson/05-boolean-logic-state\">Lesson 5: Boolean logic and state</a></li>\n</ul>\n<h2>Before you start</h2>\n<ul>\n<li>Work in <a href=\"https://makecode.microbit.org/\" rel=\"noopener noreferrer\" target=\"_blank\"><strong>MakeCode Blocks</strong></a>.</li>\n<li>Use the exact project and variable names below. <code>=</code> in a condition means \"is equal to\".</li>\n<li><code>set</code> replaces a stored value; <code>change by</code> adds to the current value.</li>\n<li>Put a block <strong>inside</strong> a condition or loop when the instruction says so. Indentation matters.</li>\n<li>If the task uses radio, both boards need power and the same allocated group. No internet or Bluetooth pairing is needed between the boards.</li>\n<li>Keep the board close to the desk. Do not throw it, pull its USB cable or cover it with metal.</li>\n</ul>\n<h2>Task 1: Measure the light</h2>\n<ol>\n<li>Create S1-04-Alarm. Add on button A+B pressed containing show number light level. Find light level in Input.</li>\n<li>Download. Cover the front LED display with your hand, press A+B and record the reading. Uncover it and repeat.</li>\n<li>The display also senses light. Use a threshold between your covered and uncovered readings. Do not assume everyone needs the same number.</li>\n</ol>\n<h2>Task 2: Set up the alarm</h2>\n<ol>\n<li>Create variables armed, triggered and threshold. In on start, set armed to false, triggered to false and threshold to your chosen number. Find true and false in Logic.</li>\n<li>In on button A pressed: clear screen, set triggered to false, then set armed to true.</li>\n<li>In on button B pressed: set armed to false, set triggered to false, then clear screen.</li>\n<li>In forever, add if armed AND light level &gt; threshold then set triggered to true. Build AND using Logic.</li>\n</ol>\n<h2>Task 3: Make a warning that stays on</h2>\n<ol>\n<li>Below that if, still inside forever, add another if: armed AND triggered.</li>\n<li>Inside, show icon No (cross), pause 200 ms, clear screen, pause 200 ms.</li>\n<li>This is a visual alarm. No speaker is required. It keeps flashing even if the light level drops again.</li>\n<li>Cover the board before pressing A to arm it, then uncover it. B must stop the alarm. Leave the A+B light reader for calibration while disarmed.</li>\n<li>Save, test and record your threshold and readings in the workbook.</li>\n</ol>\n<h2>Test your program</h2>\n<table>\n<thead>\n<tr>\n<th>Test</th>\n<th>Expected result</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Disarmed; expose display to light</td>\n<td>No flashing alarm.</td>\n</tr>\n<tr>\n<td>Cover display, then press A</td>\n<td>Board arms without triggering if reading is below threshold.</td>\n</tr>\n<tr>\n<td>Uncover armed board</td>\n<td>Warning starts flashing.</td>\n</tr>\n<tr>\n<td>Cover again after triggering</td>\n<td>Warning continues.</td>\n</tr>\n<tr>\n<td>Press B while flashing</td>\n<td>Alarm stops within one flash cycle, allowing for an in-progress pause.</td>\n</tr>\n</tbody>\n</table>\n<h2>Complete your workbook</h2>\n<ul>\n<li>Screenshot: All event blocks and the complete forever loop.</li>\n</ul>\n<p>Answer these questions in your own words:</p>\n<ol>\n<li>What is a threshold?</li>\n<li>Why does triggered stay true after the board is covered again?</li>\n<li>Explain the input, processing and output.</li>\n</ol>\n<h2>Optional challenge</h2>\n<p>After testing, choose a different threshold and record one example of a false alarm or missed opening.</p>\n<h2>Before you leave</h2>\n<ul>\n<li>Save the named project and a .hex backup.</li>\n<li>Paste readable screenshots into this lesson's workbook section.</li>\n<li>Record actual test results and any repair.</li>\n</ul>"
+    },
+    {
+      "slug": "05-tilt-arcade",
+      "title": "Tilt arcade",
+      "sections": [
+        {
+          "title": "Learning intention",
+          "html": "<p><strong>Learning intention:</strong> Move a dot safely across the display by tilting the board.</p>\n<p><strong>Key ideas:</strong> Coordinates; boundaries; variables; named functions</p>\n<p><strong>Time:</strong> 55 minutes.</p>"
+        },
+        {
+          "title": "Related teaching pages",
+          "html": "<p>This is a practical reference with its original project number. Your teacher will choose the relevant tasks for the new teaching sequence.</p>\n<ul>\n<li><a href=\"#/lesson/06-coordinates-boundaries\">Lesson 6: Coordinates and boundaries</a></li>\n<li><a href=\"#/lesson/07-functions\">Lesson 7: Functions</a></li>\n</ul>"
+        },
+        {
+          "title": "Before you start",
+          "html": "<ul>\n<li>Work in <a href=\"https://makecode.microbit.org/\" rel=\"noopener noreferrer\" target=\"_blank\"><strong>MakeCode Blocks</strong></a>.</li>\n<li>Use the exact project and variable names below. <code>=</code> in a condition means \"is equal to\".</li>\n<li><code>set</code> replaces a stored value; <code>change by</code> adds to the current value.</li>\n<li>Put a block <strong>inside</strong> a condition or loop when the instruction says so. Indentation matters.</li>\n<li>If the task uses radio, both boards need power and the same allocated group. No internet or Bluetooth pairing is needed between the boards.</li>\n<li>Keep the board close to the desk. Do not throw it, pull its USB cable or cover it with metal.</li>\n</ul>"
+        },
+        {
+          "title": "Task 1: Create the game",
+          "html": "<ol>\n<li>Create S1-05-Tilt. Make variables x, targetX, score and playing.</li>\n<li>Open Advanced &gt; Functions. Make a function called resetGame with no extra input spaces.</li>\n<li>Inside it: set x to 2; set targetX to 4; set score to 0; set playing to true; clear screen.</li>\n<li>In on start, call resetGame. In on button A pressed, also call resetGame. The same instructions are reused.</li>\n</ol>"
+        },
+        {
+          "title": "Task 2: Draw and move the player",
+          "html": "<ol>\n<li>In forever, add if playing. Put all the following game instructions inside it.</li>\n<li>Clear screen. Plot x, 4 using Led &gt; plot x y. Plot targetX, 0. Coordinates run from 0 to 4; x is across and y is down.</li>\n<li>Add if acceleration (mg) x &lt; -300 AND x &gt; 0: change x by -1.</li>\n<li>Below it add a separate if acceleration (mg) x &gt; 300 AND x &lt; 4: change x by 1. Find acceleration in Input.</li>\n<li>Add pause 200 ms at the end of the if playing block. Tilt gently; keep the board near the desk.</li>\n</ol>"
+        },
+        {
+          "title": "Task 3: Score a hit",
+          "html": "<ol>\n<li>Add on button B pressed. Inside, add if playing AND x = targetX.</li>\n<li>Inside: change score by 1; set playing to false; show number score; set targetX to pick random 0 to 4; set x to 2; set playing to true.</li>\n<li>B scores only when the player is in the target column. A resets the whole game.</li>\n<li>Test both edges repeatedly. Save and screenshot the function and all events.</li>\n</ol>"
+        },
+        {
+          "title": "Test your program",
+          "html": "<table>\n<thead>\n<tr>\n<th>Test</th>\n<th>Expected result</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Press A</td>\n<td>Player returns to centre; score is 0; target is column 4.</td>\n</tr>\n<tr>\n<td>Tilt left for several seconds</td>\n<td>Player stops at column 0.</td>\n</tr>\n<tr>\n<td>Tilt right for several seconds</td>\n<td>Player stops at column 4.</td>\n</tr>\n<tr>\n<td>Press B in wrong column</td>\n<td>Score does not increase.</td>\n</tr>\n<tr>\n<td>Press B aligned with target</td>\n<td>Score increases by 1; a new target is selected.</td>\n</tr>\n</tbody>\n</table>"
+        },
+        {
+          "title": "Complete your workbook",
+          "html": "<ul>\n<li>Screenshot: resetGame function.</li>\n<li>Screenshot: Startup, forever and both button events.</li>\n</ul>\n<p>Answer these questions in your own words:</p>\n<ol>\n<li>Why check x &gt; 0 before moving left?</li>\n<li>What is the difference between defining and calling resetGame?</li>\n<li>How do the forever loop and button event share information?</li>\n</ol>"
+        },
+        {
+          "title": "Optional challenge",
+          "html": "<p>Add a lives variable starting at 3. A wrong B press loses one life; at 0 set playing to false and show a cross.</p>"
+        },
+        {
+          "title": "Before you leave",
+          "html": "<ul>\n<li>Save the named project and a .hex backup.</li>\n<li>Paste readable screenshots into this lesson's workbook section.</li>\n<li>Record actual test results and any repair.</li>\n</ul>"
+        }
+      ],
+      "html": "<p><strong>Learning intention:</strong> Move a dot safely across the display by tilting the board.</p>\n<p><strong>Key ideas:</strong> Coordinates; boundaries; variables; named functions</p>\n<p><strong>Time:</strong> 55 minutes.</p>\n<h2>Related teaching pages</h2>\n<p>This is a practical reference with its original project number. Your teacher will choose the relevant tasks for the new teaching sequence.</p>\n<ul>\n<li><a href=\"#/lesson/06-coordinates-boundaries\">Lesson 6: Coordinates and boundaries</a></li>\n<li><a href=\"#/lesson/07-functions\">Lesson 7: Functions</a></li>\n</ul>\n<h2>Before you start</h2>\n<ul>\n<li>Work in <a href=\"https://makecode.microbit.org/\" rel=\"noopener noreferrer\" target=\"_blank\"><strong>MakeCode Blocks</strong></a>.</li>\n<li>Use the exact project and variable names below. <code>=</code> in a condition means \"is equal to\".</li>\n<li><code>set</code> replaces a stored value; <code>change by</code> adds to the current value.</li>\n<li>Put a block <strong>inside</strong> a condition or loop when the instruction says so. Indentation matters.</li>\n<li>If the task uses radio, both boards need power and the same allocated group. No internet or Bluetooth pairing is needed between the boards.</li>\n<li>Keep the board close to the desk. Do not throw it, pull its USB cable or cover it with metal.</li>\n</ul>\n<h2>Task 1: Create the game</h2>\n<ol>\n<li>Create S1-05-Tilt. Make variables x, targetX, score and playing.</li>\n<li>Open Advanced &gt; Functions. Make a function called resetGame with no extra input spaces.</li>\n<li>Inside it: set x to 2; set targetX to 4; set score to 0; set playing to true; clear screen.</li>\n<li>In on start, call resetGame. In on button A pressed, also call resetGame. The same instructions are reused.</li>\n</ol>\n<h2>Task 2: Draw and move the player</h2>\n<ol>\n<li>In forever, add if playing. Put all the following game instructions inside it.</li>\n<li>Clear screen. Plot x, 4 using Led &gt; plot x y. Plot targetX, 0. Coordinates run from 0 to 4; x is across and y is down.</li>\n<li>Add if acceleration (mg) x &lt; -300 AND x &gt; 0: change x by -1.</li>\n<li>Below it add a separate if acceleration (mg) x &gt; 300 AND x &lt; 4: change x by 1. Find acceleration in Input.</li>\n<li>Add pause 200 ms at the end of the if playing block. Tilt gently; keep the board near the desk.</li>\n</ol>\n<h2>Task 3: Score a hit</h2>\n<ol>\n<li>Add on button B pressed. Inside, add if playing AND x = targetX.</li>\n<li>Inside: change score by 1; set playing to false; show number score; set targetX to pick random 0 to 4; set x to 2; set playing to true.</li>\n<li>B scores only when the player is in the target column. A resets the whole game.</li>\n<li>Test both edges repeatedly. Save and screenshot the function and all events.</li>\n</ol>\n<h2>Test your program</h2>\n<table>\n<thead>\n<tr>\n<th>Test</th>\n<th>Expected result</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Press A</td>\n<td>Player returns to centre; score is 0; target is column 4.</td>\n</tr>\n<tr>\n<td>Tilt left for several seconds</td>\n<td>Player stops at column 0.</td>\n</tr>\n<tr>\n<td>Tilt right for several seconds</td>\n<td>Player stops at column 4.</td>\n</tr>\n<tr>\n<td>Press B in wrong column</td>\n<td>Score does not increase.</td>\n</tr>\n<tr>\n<td>Press B aligned with target</td>\n<td>Score increases by 1; a new target is selected.</td>\n</tr>\n</tbody>\n</table>\n<h2>Complete your workbook</h2>\n<ul>\n<li>Screenshot: resetGame function.</li>\n<li>Screenshot: Startup, forever and both button events.</li>\n</ul>\n<p>Answer these questions in your own words:</p>\n<ol>\n<li>Why check x &gt; 0 before moving left?</li>\n<li>What is the difference between defining and calling resetGame?</li>\n<li>How do the forever loop and button event share information?</li>\n</ol>\n<h2>Optional challenge</h2>\n<p>Add a lives variable starting at 3. A wrong B press loses one life; at 0 set playing to false and show a cross.</p>\n<h2>Before you leave</h2>\n<ul>\n<li>Save the named project and a .hex backup.</li>\n<li>Paste readable screenshots into this lesson's workbook section.</li>\n<li>Record actual test results and any repair.</li>\n</ul>"
+    },
+    {
+      "slug": "06-memory-master",
+      "title": "Memory master",
+      "sections": [
+        {
+          "title": "Learning intention",
+          "html": "<p><strong>Learning intention:</strong> Store and check an ordered sequence of button choices.</p>\n<p><strong>Key ideas:</strong> Lists; indexes; iteration; selection; subprograms</p>\n<p><strong>Time:</strong> 55 minutes.</p>"
+        },
+        {
+          "title": "Related teaching pages",
+          "html": "<p>This is a practical reference with its original project number. Your teacher will choose the relevant tasks for the new teaching sequence.</p>\n<ul>\n<li><a href=\"#/lesson/08-lists-indexing\">Lesson 8: Lists and indexing</a></li>\n</ul>"
+        },
+        {
+          "title": "Before you start",
+          "html": "<ul>\n<li>Work in <a href=\"https://makecode.microbit.org/\" rel=\"noopener noreferrer\" target=\"_blank\"><strong>MakeCode Blocks</strong></a>.</li>\n<li>Use the exact project and variable names below. <code>=</code> in a condition means \"is equal to\".</li>\n<li><code>set</code> replaces a stored value; <code>change by</code> adds to the current value.</li>\n<li>Put a block <strong>inside</strong> a condition or loop when the instruction says so. Indentation matters.</li>\n<li>If the task uses radio, both boards need power and the same allocated group. No internet or Bluetooth pairing is needed between the boards.</li>\n<li>Keep the board close to the desk. Do not throw it, pull its USB cable or cover it with metal.</li>\n</ul>"
+        },
+        {
+          "title": "Task 1: Read the supplied framework",
+          "html": "<ol>\n<li>Create S1-06-Memory. Load 06-memory-starter.ts as explained in Getting Started, then return to Blocks.</li>\n<li>The sequence list contains 0, 1, 0. In this game, 0 means A and 1 means B.</li>\n<li>The list positions are 0, 1 and 2. The first item is at index 0, not index 1.</li>\n<li>Find the playSequence function. It shows each item as A or B, then sets accepting to true. A+B calls this function.</li>\n</ol>"
+        },
+        {
+          "title": "Task 2: Finish the checking function",
+          "html": "<ol>\n<li>Find the empty function checkChoice. Keep its supplied choice block. The A event will use 0 in the call block and the B event will use 1; use choice in the comparison below.</li>\n<li>Inside it add if accepting. All checking instructions go inside this condition.</li>\n<li>Inside, add if choice = sequence get value at index position. Find list get value at in Advanced &gt; Arrays. Drag the sequence variable into the list socket.</li>\n<li>In the correct branch, change position by 1. Then add if position = length of array sequence. Inside that, set accepting to false and show icon Yes (tick).</li>\n<li>In the wrong branch, set accepting to false and show icon No (cross).</li>\n</ol>"
+        },
+        {
+          "title": "Task 3: Connect the buttons and test",
+          "html": "<ol>\n<li>In on button A pressed, call checkChoice with 0. In on button B pressed, call checkChoice with 1.</li>\n<li>Press A+B, watch the sequence finish, then enter A, B, A. You should get a tick.</li>\n<li>Start again. Deliberately give a wrong answer. You should get a cross.</li>\n<li>Change the list in on start to 1, 0, 1, 1. Replay it and test B, A, B, B. The same checker should work without changing a hard-coded length.</li>\n<li>Save and screenshot both the list setup and the complete checking function.</li>\n</ol>"
+        },
+        {
+          "title": "Test your program",
+          "html": "<table>\n<thead>\n<tr>\n<th>Test</th>\n<th>Expected result</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Press A before playback</td>\n<td>No answer is accepted.</td>\n</tr>\n<tr>\n<td>Play [0,1,0], enter A,B,A</td>\n<td>Tick after the third correct answer.</td>\n</tr>\n<tr>\n<td>Play [0,1,0], enter B first</td>\n<td>Cross; further answers ignored.</td>\n</tr>\n<tr>\n<td>Change list to [1,0,1,1], enter B,A,B,B</td>\n<td>Tick after the fourth answer.</td>\n</tr>\n<tr>\n<td>Press A+B after finishing</td>\n<td>Position resets and the sequence plays again.</td>\n</tr>\n</tbody>\n</table>"
+        },
+        {
+          "title": "Complete your workbook",
+          "html": "<ul>\n<li>Screenshot: Startup list, button events and playSequence.</li>\n<li>Screenshot: Complete checkChoice function.</li>\n</ul>\n<p>Answer these questions in your own words:</p>\n<ol>\n<li>What is stored at index 1 in [0,1,0]?</li>\n<li>Why is a list better than three separate variables here?</li>\n<li>Why compare position with the list length?</li>\n</ol>"
+        },
+        {
+          "title": "Optional challenge",
+          "html": "<p>At the start of playSequence, replace the list with three random values from 0 to 1. Keep the checking function unchanged.</p>"
+        },
+        {
+          "title": "Before you leave",
+          "html": "<ul>\n<li>Save the named project and a .hex backup.</li>\n<li>Paste readable screenshots into this lesson's workbook section.</li>\n<li>Record actual test results and any repair.</li>\n</ul>"
+        }
+      ],
+      "html": "<p><strong>Learning intention:</strong> Store and check an ordered sequence of button choices.</p>\n<p><strong>Key ideas:</strong> Lists; indexes; iteration; selection; subprograms</p>\n<p><strong>Time:</strong> 55 minutes.</p>\n<h2>Related teaching pages</h2>\n<p>This is a practical reference with its original project number. Your teacher will choose the relevant tasks for the new teaching sequence.</p>\n<ul>\n<li><a href=\"#/lesson/08-lists-indexing\">Lesson 8: Lists and indexing</a></li>\n</ul>\n<h2>Before you start</h2>\n<ul>\n<li>Work in <a href=\"https://makecode.microbit.org/\" rel=\"noopener noreferrer\" target=\"_blank\"><strong>MakeCode Blocks</strong></a>.</li>\n<li>Use the exact project and variable names below. <code>=</code> in a condition means \"is equal to\".</li>\n<li><code>set</code> replaces a stored value; <code>change by</code> adds to the current value.</li>\n<li>Put a block <strong>inside</strong> a condition or loop when the instruction says so. Indentation matters.</li>\n<li>If the task uses radio, both boards need power and the same allocated group. No internet or Bluetooth pairing is needed between the boards.</li>\n<li>Keep the board close to the desk. Do not throw it, pull its USB cable or cover it with metal.</li>\n</ul>\n<h2>Task 1: Read the supplied framework</h2>\n<ol>\n<li>Create S1-06-Memory. Load 06-memory-starter.ts as explained in Getting Started, then return to Blocks.</li>\n<li>The sequence list contains 0, 1, 0. In this game, 0 means A and 1 means B.</li>\n<li>The list positions are 0, 1 and 2. The first item is at index 0, not index 1.</li>\n<li>Find the playSequence function. It shows each item as A or B, then sets accepting to true. A+B calls this function.</li>\n</ol>\n<h2>Task 2: Finish the checking function</h2>\n<ol>\n<li>Find the empty function checkChoice. Keep its supplied choice block. The A event will use 0 in the call block and the B event will use 1; use choice in the comparison below.</li>\n<li>Inside it add if accepting. All checking instructions go inside this condition.</li>\n<li>Inside, add if choice = sequence get value at index position. Find list get value at in Advanced &gt; Arrays. Drag the sequence variable into the list socket.</li>\n<li>In the correct branch, change position by 1. Then add if position = length of array sequence. Inside that, set accepting to false and show icon Yes (tick).</li>\n<li>In the wrong branch, set accepting to false and show icon No (cross).</li>\n</ol>\n<h2>Task 3: Connect the buttons and test</h2>\n<ol>\n<li>In on button A pressed, call checkChoice with 0. In on button B pressed, call checkChoice with 1.</li>\n<li>Press A+B, watch the sequence finish, then enter A, B, A. You should get a tick.</li>\n<li>Start again. Deliberately give a wrong answer. You should get a cross.</li>\n<li>Change the list in on start to 1, 0, 1, 1. Replay it and test B, A, B, B. The same checker should work without changing a hard-coded length.</li>\n<li>Save and screenshot both the list setup and the complete checking function.</li>\n</ol>\n<h2>Test your program</h2>\n<table>\n<thead>\n<tr>\n<th>Test</th>\n<th>Expected result</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Press A before playback</td>\n<td>No answer is accepted.</td>\n</tr>\n<tr>\n<td>Play [0,1,0], enter A,B,A</td>\n<td>Tick after the third correct answer.</td>\n</tr>\n<tr>\n<td>Play [0,1,0], enter B first</td>\n<td>Cross; further answers ignored.</td>\n</tr>\n<tr>\n<td>Change list to [1,0,1,1], enter B,A,B,B</td>\n<td>Tick after the fourth answer.</td>\n</tr>\n<tr>\n<td>Press A+B after finishing</td>\n<td>Position resets and the sequence plays again.</td>\n</tr>\n</tbody>\n</table>\n<h2>Complete your workbook</h2>\n<ul>\n<li>Screenshot: Startup list, button events and playSequence.</li>\n<li>Screenshot: Complete checkChoice function.</li>\n</ul>\n<p>Answer these questions in your own words:</p>\n<ol>\n<li>What is stored at index 1 in [0,1,0]?</li>\n<li>Why is a list better than three separate variables here?</li>\n<li>Why compare position with the list length?</li>\n</ol>\n<h2>Optional challenge</h2>\n<p>At the start of playSequence, replace the list with three random values from 0 to 1. Keep the checking function unchanged.</p>\n<h2>Before you leave</h2>\n<ul>\n<li>Save the named project and a .hex backup.</li>\n<li>Paste readable screenshots into this lesson's workbook section.</li>\n<li>Record actual test results and any repair.</li>\n</ul>"
+    },
+    {
+      "slug": "07-wireless-rescue",
+      "title": "Wireless rescue team",
+      "sections": [
+        {
+          "title": "Learning intention",
+          "html": "<p><strong>Learning intention:</strong> Send a help message and receive an acknowledgement between two boards.</p>\n<p><strong>Key ideas:</strong> Sender; receiver; messages; communicating processes</p>\n<p><strong>Time:</strong> 55 minutes.</p>"
+        },
+        {
+          "title": "Related teaching pages",
+          "html": "<p>This is a practical reference with its original project number. Your teacher will choose the relevant tasks for the new teaching sequence.</p>\n<ul>\n<li><a href=\"#/lesson/09-radio-communication\">Lesson 9: Radio communication</a></li>\n</ul>"
+        },
+        {
+          "title": "Before you start",
+          "html": "<ul>\n<li>Work in <a href=\"https://makecode.microbit.org/\" rel=\"noopener noreferrer\" target=\"_blank\"><strong>MakeCode Blocks</strong></a>.</li>\n<li>Use the exact project and variable names below. <code>=</code> in a condition means \"is equal to\".</li>\n<li><code>set</code> replaces a stored value; <code>change by</code> adds to the current value.</li>\n<li>Put a block <strong>inside</strong> a condition or loop when the instruction says so. Indentation matters.</li>\n<li>If the task uses radio, both boards need power and the same allocated group. No internet or Bluetooth pairing is needed between the boards.</li>\n<li>Keep the board close to the desk. Do not throw it, pull its USB cable or cover it with metal.</li>\n</ul>"
+        },
+        {
+          "title": "Task 1: Prepare two projects",
+          "html": "<ol>\n<li>Work with another pupil so there are two boards. Label them FIELD and BASE. Keep both connected to computers if you have no battery packs.</li>\n<li>Your teacher allocates a radio group from 1 to 255. Both your boards use the same group. Other teams use different groups.</li>\n<li>Create S1-07-Field and S1-07-Base as separate projects. In each on start, add Radio &gt; radio set group with your allocated number.</li>\n<li>A radio group filters traffic; it is not a password, private channel or individual device address.</li>\n</ol>"
+        },
+        {
+          "title": "Task 2: Build FIELD",
+          "html": "<ol>\n<li>In FIELD, on button A pressed: radio send string HELP, then show icon Question.</li>\n<li>Add on radio received receivedString. Inside, if receivedString = OK, show icon Yes. Text must match exactly, including capitals.</li>\n</ol>"
+        },
+        {
+          "title": "Task 3: Build BASE",
+          "html": "<ol>\n<li>In BASE, add on radio received receivedString. Inside, if receivedString = HELP, show string H.</li>\n<li>In on button B pressed: radio send string OK, then clear screen.</li>\n<li>Download each project to the correctly labelled board. Test A on FIELD, then B on BASE.</li>\n<li>Swap who operates each board and repeat. Draw the message journey in the workbook. Save both projects and add both code screenshots.</li>\n</ol>"
+        },
+        {
+          "title": "Test your program",
+          "html": "<table>\n<thead>\n<tr>\n<th>Test</th>\n<th>Expected result</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Both boards use same group; FIELD A</td>\n<td>FIELD shows question mark; BASE shows H.</td>\n</tr>\n<tr>\n<td>BASE B after request</td>\n<td>BASE clears; FIELD shows tick.</td>\n</tr>\n<tr>\n<td>Temporarily change BASE to a different group and download</td>\n<td>A new FIELD request is not received by BASE.</td>\n</tr>\n<tr>\n<td>Restore matching group and download</td>\n<td>Communication works again.</td>\n</tr>\n</tbody>\n</table>"
+        },
+        {
+          "title": "Complete your workbook",
+          "html": "<ul>\n<li>Screenshot: Complete FIELD program.</li>\n<li>Screenshot: Complete BASE program.</li>\n</ul>\n<p>Answer these questions in your own words:</p>\n<ol>\n<li>Which board sends and which receives? Can a board do both?</li>\n<li>Do two forever loops on different boards automatically communicate?</li>\n<li>What does the radio group do?</li>\n</ol>"
+        },
+        {
+          "title": "Optional challenge",
+          "html": "<p>FIELD A+B sends CHECK. BASE displays C on receiving CHECK. Keep HELP and OK working.</p>"
+        },
+        {
+          "title": "Before you leave",
+          "html": "<ul>\n<li>Save the named project and a .hex backup.</li>\n<li>Paste readable screenshots into this lesson's workbook section.</li>\n<li>Record actual test results and any repair.</li>\n</ul>"
+        }
+      ],
+      "html": "<p><strong>Learning intention:</strong> Send a help message and receive an acknowledgement between two boards.</p>\n<p><strong>Key ideas:</strong> Sender; receiver; messages; communicating processes</p>\n<p><strong>Time:</strong> 55 minutes.</p>\n<h2>Related teaching pages</h2>\n<p>This is a practical reference with its original project number. Your teacher will choose the relevant tasks for the new teaching sequence.</p>\n<ul>\n<li><a href=\"#/lesson/09-radio-communication\">Lesson 9: Radio communication</a></li>\n</ul>\n<h2>Before you start</h2>\n<ul>\n<li>Work in <a href=\"https://makecode.microbit.org/\" rel=\"noopener noreferrer\" target=\"_blank\"><strong>MakeCode Blocks</strong></a>.</li>\n<li>Use the exact project and variable names below. <code>=</code> in a condition means \"is equal to\".</li>\n<li><code>set</code> replaces a stored value; <code>change by</code> adds to the current value.</li>\n<li>Put a block <strong>inside</strong> a condition or loop when the instruction says so. Indentation matters.</li>\n<li>If the task uses radio, both boards need power and the same allocated group. No internet or Bluetooth pairing is needed between the boards.</li>\n<li>Keep the board close to the desk. Do not throw it, pull its USB cable or cover it with metal.</li>\n</ul>\n<h2>Task 1: Prepare two projects</h2>\n<ol>\n<li>Work with another pupil so there are two boards. Label them FIELD and BASE. Keep both connected to computers if you have no battery packs.</li>\n<li>Your teacher allocates a radio group from 1 to 255. Both your boards use the same group. Other teams use different groups.</li>\n<li>Create S1-07-Field and S1-07-Base as separate projects. In each on start, add Radio &gt; radio set group with your allocated number.</li>\n<li>A radio group filters traffic; it is not a password, private channel or individual device address.</li>\n</ol>\n<h2>Task 2: Build FIELD</h2>\n<ol>\n<li>In FIELD, on button A pressed: radio send string HELP, then show icon Question.</li>\n<li>Add on radio received receivedString. Inside, if receivedString = OK, show icon Yes. Text must match exactly, including capitals.</li>\n</ol>\n<h2>Task 3: Build BASE</h2>\n<ol>\n<li>In BASE, add on radio received receivedString. Inside, if receivedString = HELP, show string H.</li>\n<li>In on button B pressed: radio send string OK, then clear screen.</li>\n<li>Download each project to the correctly labelled board. Test A on FIELD, then B on BASE.</li>\n<li>Swap who operates each board and repeat. Draw the message journey in the workbook. Save both projects and add both code screenshots.</li>\n</ol>\n<h2>Test your program</h2>\n<table>\n<thead>\n<tr>\n<th>Test</th>\n<th>Expected result</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Both boards use same group; FIELD A</td>\n<td>FIELD shows question mark; BASE shows H.</td>\n</tr>\n<tr>\n<td>BASE B after request</td>\n<td>BASE clears; FIELD shows tick.</td>\n</tr>\n<tr>\n<td>Temporarily change BASE to a different group and download</td>\n<td>A new FIELD request is not received by BASE.</td>\n</tr>\n<tr>\n<td>Restore matching group and download</td>\n<td>Communication works again.</td>\n</tr>\n</tbody>\n</table>\n<h2>Complete your workbook</h2>\n<ul>\n<li>Screenshot: Complete FIELD program.</li>\n<li>Screenshot: Complete BASE program.</li>\n</ul>\n<p>Answer these questions in your own words:</p>\n<ol>\n<li>Which board sends and which receives? Can a board do both?</li>\n<li>Do two forever loops on different boards automatically communicate?</li>\n<li>What does the radio group do?</li>\n</ol>\n<h2>Optional challenge</h2>\n<p>FIELD A+B sends CHECK. BASE displays C on receiving CHECK. Keep HELP and OK working.</p>\n<h2>Before you leave</h2>\n<ul>\n<li>Save the named project and a .hex backup.</li>\n<li>Paste readable screenshots into this lesson's workbook section.</li>\n<li>Record actual test results and any repair.</li>\n</ul>"
+    },
+    {
+      "slug": "08-secret-signals",
+      "title": "Secret signals laboratory",
+      "sections": [
+        {
+          "title": "Learning intention",
+          "html": "<p><strong>Learning intention:</strong> Encode a numeric message with a shared key and explain its limitations.</p>\n<p><strong>Key ideas:</strong> Representation; simple encryption; variables; communication</p>\n<p><strong>Time:</strong> 55 minutes.</p>"
+        },
+        {
+          "title": "Related teaching pages",
+          "html": "<p>This is a practical reference with its original project number. Your teacher will choose the relevant tasks for the new teaching sequence.</p>\n<ul>\n<li><a href=\"#/lesson/02-variables-random-numbers\">Variables and random numbers</a></li>\n<li><a href=\"#/lesson/09-radio-communication\">Radio communication</a></li>\n</ul>"
+        },
+        {
+          "title": "Before you start",
+          "html": "<ul>\n<li>Work in <a href=\"https://makecode.microbit.org/\" rel=\"noopener noreferrer\" target=\"_blank\"><strong>MakeCode Blocks</strong></a>.</li>\n<li>Use the exact project and variable names below. <code>=</code> in a condition means \"is equal to\".</li>\n<li><code>set</code> replaces a stored value; <code>change by</code> adds to the current value.</li>\n<li>Put a block <strong>inside</strong> a condition or loop when the instruction says so. Indentation matters.</li>\n<li>If the task uses radio, both boards need power and the same allocated group. No internet or Bluetooth pairing is needed between the boards.</li>\n<li>Keep the board close to the desk. Do not throw it, pull its USB cable or cover it with metal.</li>\n</ul>"
+        },
+        {
+          "title": "Task 1: Agree the message meaning",
+          "html": "<ol>\n<li>Use two boards and one allocated radio group. Create S1-08-Sender and S1-08-Receiver.</li>\n<li>Agree this codebook: 1 = need help; 2 = task finished; 3 = please check. Writing a meaning as a number is encoding, not encryption.</li>\n<li>In both programs, make a variable key and set it to 7 in on start. Also set the same radio group in both.</li>\n</ol>"
+        },
+        {
+          "title": "Task 2: Build SENDER",
+          "html": "<ol>\n<li>Create a variable message and set it to 1 in on start.</li>\n<li>On button A pressed: change message by 1; if message &gt; 3 then set message to 1; show number message.</li>\n<li>On button B pressed: radio send number message + key, then show icon Yes.</li>\n<li>Use A to choose a message and B to send it.</li>\n</ol>"
+        },
+        {
+          "title": "Task 3: Build RECEIVER",
+          "html": "<ol>\n<li>Create a variable decoded. Add on radio received receivedNumber. This is the NUMBER event, not the string event.</li>\n<li>Inside: set decoded to receivedNumber - key. Then show number decoded. Use the codebook to interpret it.</li>\n<li>Send all three messages. Record the original value, transmitted value and decoded value in the workbook.</li>\n<li>Temporarily change RECEIVER key to 6. Send message 2. Record the incorrect result, then restore key 7.</li>\n<li>Another pair is told that the transmitted value was 9 and the original was 2. Ask them to find the key. Save and screenshot both programs.</li>\n</ol>"
+        },
+        {
+          "title": "Task 4: Explain the security",
+          "html": "<ol>\n<li>The add/subtract rule is a toy encryption model for learning. It is very easy to break and must not protect real secrets.</li>\n<li>A group number does not hide message contents. An observer using the same group can receive the transmitted number.</li>\n<li>Discuss how knowing one original/transmitted pair reveals this key.</li>\n</ol>"
+        },
+        {
+          "title": "Test your program",
+          "html": "<table>\n<thead>\n<tr>\n<th>Test</th>\n<th>Expected result</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Send 1 with key 7</td>\n<td>Transmitted 8; receiver displays 1.</td>\n</tr>\n<tr>\n<td>Send 2 with key 7</td>\n<td>Transmitted 9; receiver displays 2.</td>\n</tr>\n<tr>\n<td>Send 3 with key 7</td>\n<td>Transmitted 10; receiver displays 3.</td>\n</tr>\n<tr>\n<td>Sender key 7; receiver key 6; send 2</td>\n<td>Receiver displays 3, showing the wrong meaning.</td>\n</tr>\n<tr>\n<td>Restore both keys to 7</td>\n<td>Original meaning is recovered.</td>\n</tr>\n</tbody>\n</table>"
+        },
+        {
+          "title": "Complete your workbook",
+          "html": "<ul>\n<li>Screenshot: Complete SENDER program.</li>\n<li>Screenshot: Complete RECEIVER program.</li>\n</ul>\n<p>Answer these questions in your own words:</p>\n<ol>\n<li>What is the difference between the codebook and the shared key?</li>\n<li>How can someone find the key if 2 is transmitted as 9?</li>\n<li>Could the number 1 have another meaning in a different system?</li>\n</ol>"
+        },
+        {
+          "title": "Optional challenge",
+          "html": "<p>On RECEIVER, display a cross if decoded is below 1 or above 3. Explain why a wrong key can still produce a valid but incorrect message.</p>"
+        },
+        {
+          "title": "Before you leave",
+          "html": "<ul>\n<li>Save the named project and a .hex backup.</li>\n<li>Paste readable screenshots into this lesson's workbook section.</li>\n<li>Record actual test results and any repair.</li>\n</ul>"
+        }
+      ],
+      "html": "<p><strong>Learning intention:</strong> Encode a numeric message with a shared key and explain its limitations.</p>\n<p><strong>Key ideas:</strong> Representation; simple encryption; variables; communication</p>\n<p><strong>Time:</strong> 55 minutes.</p>\n<h2>Related teaching pages</h2>\n<p>This is a practical reference with its original project number. Your teacher will choose the relevant tasks for the new teaching sequence.</p>\n<ul>\n<li><a href=\"#/lesson/02-variables-random-numbers\">Variables and random numbers</a></li>\n<li><a href=\"#/lesson/09-radio-communication\">Radio communication</a></li>\n</ul>\n<h2>Before you start</h2>\n<ul>\n<li>Work in <a href=\"https://makecode.microbit.org/\" rel=\"noopener noreferrer\" target=\"_blank\"><strong>MakeCode Blocks</strong></a>.</li>\n<li>Use the exact project and variable names below. <code>=</code> in a condition means \"is equal to\".</li>\n<li><code>set</code> replaces a stored value; <code>change by</code> adds to the current value.</li>\n<li>Put a block <strong>inside</strong> a condition or loop when the instruction says so. Indentation matters.</li>\n<li>If the task uses radio, both boards need power and the same allocated group. No internet or Bluetooth pairing is needed between the boards.</li>\n<li>Keep the board close to the desk. Do not throw it, pull its USB cable or cover it with metal.</li>\n</ul>\n<h2>Task 1: Agree the message meaning</h2>\n<ol>\n<li>Use two boards and one allocated radio group. Create S1-08-Sender and S1-08-Receiver.</li>\n<li>Agree this codebook: 1 = need help; 2 = task finished; 3 = please check. Writing a meaning as a number is encoding, not encryption.</li>\n<li>In both programs, make a variable key and set it to 7 in on start. Also set the same radio group in both.</li>\n</ol>\n<h2>Task 2: Build SENDER</h2>\n<ol>\n<li>Create a variable message and set it to 1 in on start.</li>\n<li>On button A pressed: change message by 1; if message &gt; 3 then set message to 1; show number message.</li>\n<li>On button B pressed: radio send number message + key, then show icon Yes.</li>\n<li>Use A to choose a message and B to send it.</li>\n</ol>\n<h2>Task 3: Build RECEIVER</h2>\n<ol>\n<li>Create a variable decoded. Add on radio received receivedNumber. This is the NUMBER event, not the string event.</li>\n<li>Inside: set decoded to receivedNumber - key. Then show number decoded. Use the codebook to interpret it.</li>\n<li>Send all three messages. Record the original value, transmitted value and decoded value in the workbook.</li>\n<li>Temporarily change RECEIVER key to 6. Send message 2. Record the incorrect result, then restore key 7.</li>\n<li>Another pair is told that the transmitted value was 9 and the original was 2. Ask them to find the key. Save and screenshot both programs.</li>\n</ol>\n<h2>Task 4: Explain the security</h2>\n<ol>\n<li>The add/subtract rule is a toy encryption model for learning. It is very easy to break and must not protect real secrets.</li>\n<li>A group number does not hide message contents. An observer using the same group can receive the transmitted number.</li>\n<li>Discuss how knowing one original/transmitted pair reveals this key.</li>\n</ol>\n<h2>Test your program</h2>\n<table>\n<thead>\n<tr>\n<th>Test</th>\n<th>Expected result</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Send 1 with key 7</td>\n<td>Transmitted 8; receiver displays 1.</td>\n</tr>\n<tr>\n<td>Send 2 with key 7</td>\n<td>Transmitted 9; receiver displays 2.</td>\n</tr>\n<tr>\n<td>Send 3 with key 7</td>\n<td>Transmitted 10; receiver displays 3.</td>\n</tr>\n<tr>\n<td>Sender key 7; receiver key 6; send 2</td>\n<td>Receiver displays 3, showing the wrong meaning.</td>\n</tr>\n<tr>\n<td>Restore both keys to 7</td>\n<td>Original meaning is recovered.</td>\n</tr>\n</tbody>\n</table>\n<h2>Complete your workbook</h2>\n<ul>\n<li>Screenshot: Complete SENDER program.</li>\n<li>Screenshot: Complete RECEIVER program.</li>\n</ul>\n<p>Answer these questions in your own words:</p>\n<ol>\n<li>What is the difference between the codebook and the shared key?</li>\n<li>How can someone find the key if 2 is transmitted as 9?</li>\n<li>Could the number 1 have another meaning in a different system?</li>\n</ol>\n<h2>Optional challenge</h2>\n<p>On RECEIVER, display a cross if decoded is below 1 or above 3. Explain why a wrong key can still produce a valid but incorrect message.</p>\n<h2>Before you leave</h2>\n<ul>\n<li>Save the named project and a .hex backup.</li>\n<li>Paste readable screenshots into this lesson's workbook section.</li>\n<li>Record actual test results and any repair.</li>\n</ul>"
+    },
+    {
+      "slug": "09-classroom-help",
+      "title": "Classroom help system: build",
+      "sections": [
+        {
+          "title": "Learning intention",
+          "html": "<p><strong>Learning intention:</strong> Build a specified pupil-to-teacher help and acknowledgement system.</p>\n<p><strong>Key ideas:</strong> Requirements; design; variables; radio events</p>\n<p><strong>Time:</strong> 55 minutes.</p>"
+        },
+        {
+          "title": "Related teaching pages",
+          "html": "<p>This is a practical reference with its original project number. Your teacher will choose the relevant tasks for the new teaching sequence.</p>\n<ul>\n<li><a href=\"#/lesson/09-radio-communication\">Lesson 9: Radio communication</a></li>\n</ul>"
+        },
+        {
+          "title": "Before you start",
+          "html": "<ul>\n<li>Work in <a href=\"https://makecode.microbit.org/\" rel=\"noopener noreferrer\" target=\"_blank\"><strong>MakeCode Blocks</strong></a>.</li>\n<li>Use the exact project and variable names below. <code>=</code> in a condition means \"is equal to\".</li>\n<li><code>set</code> replaces a stored value; <code>change by</code> adds to the current value.</li>\n<li>Put a block <strong>inside</strong> a condition or loop when the instruction says so. Indentation matters.</li>\n<li>If the task uses radio, both boards need power and the same allocated group. No internet or Bluetooth pairing is needed between the boards.</li>\n<li>Keep the board close to the desk. Do not throw it, pull its USB cable or cover it with metal.</li>\n</ul>"
+        },
+        {
+          "title": "Task 1: Read the requirements",
+          "html": "<ol>\n<li>You will build exactly this system: pupil A sends HELP; teacher sees H; teacher B sends OK; pupil sees a tick.</li>\n<li>Complete the workbook design before coding: identify the user of each board, inputs, messages and outputs.</li>\n<li>Work in a pair with two boards. Create two NEW projects called S1-09-Pupil and S1-09-Teacher. Use lesson 7 as a reference, but name the programs clearly.</li>\n<li>Set the same teacher-allocated radio group in both on start blocks. Use a different group from other pairs.</li>\n</ol>"
+        },
+        {
+          "title": "Task 2: Build PUPIL",
+          "html": "<ol>\n<li>On button A pressed: radio send string HELP, then show icon Question.</li>\n<li>On radio received receivedString: if receivedString = OK, show icon Yes.</li>\n<li>This first version is allowed to send repeated requests. You will fix that in lesson 10.</li>\n</ol>"
+        },
+        {
+          "title": "Task 3: Build TEACHER with a test counter",
+          "html": "<ol>\n<li>Make a variable requests. Set requests to 0 in on start.</li>\n<li>On radio received receivedString: if receivedString = HELP, change requests by 1 and show string H.</li>\n<li>On button A pressed: show number requests. This is your diagnostic test counter. It counts requests, not different pupils.</li>\n<li>On button B pressed: radio send string OK, then clear screen.</li>\n<li>Test the request and acknowledgement. Press pupil A three times, waiting for each press to register. Teacher A should show 3 after a fresh reset.</li>\n<li>Save both projects. Record the repeated-request problem and take both code screenshots.</li>\n</ol>"
+        },
+        {
+          "title": "Test your program",
+          "html": "<table>\n<thead>\n<tr>\n<th>Test</th>\n<th>Expected result</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Reset both boards; pupil A once</td>\n<td>Pupil shows question mark; teacher shows H.</td>\n</tr>\n<tr>\n<td>Teacher A</td>\n<td>Counter shows 1.</td>\n</tr>\n<tr>\n<td>Pupil A twice more; teacher A</td>\n<td>Counter shows 3.</td>\n</tr>\n<tr>\n<td>Teacher B</td>\n<td>Pupil shows tick; teacher clears.</td>\n</tr>\n<tr>\n<td>Send unrelated string TEST using a temporary test sender</td>\n<td>Neither board treats TEST as HELP or OK.</td>\n</tr>\n</tbody>\n</table>"
+        },
+        {
+          "title": "Complete your workbook",
+          "html": "<ul>\n<li>Screenshot: Complete PUPIL program, before lesson 10 changes.</li>\n<li>Screenshot: Complete TEACHER program, including requests counter.</li>\n</ul>\n<p>Answer these questions in your own words:</p>\n<ol>\n<li>State two requirements of this system.</li>\n<li>Why does the teacher counter not tell us the number of different pupils?</li>\n<li>What is wrong with allowing repeated HELP requests while waiting?</li>\n</ol>"
+        },
+        {
+          "title": "Optional challenge",
+          "html": "<p>Add teacher A+B to reset requests to 0. Keep B as acknowledgement and A as viewing the count.</p>"
+        },
+        {
+          "title": "Before you leave",
+          "html": "<ul>\n<li>Save the named project and a .hex backup.</li>\n<li>Paste readable screenshots into this lesson's workbook section.</li>\n<li>Record actual test results and any repair.</li>\n</ul>"
+        }
+      ],
+      "html": "<p><strong>Learning intention:</strong> Build a specified pupil-to-teacher help and acknowledgement system.</p>\n<p><strong>Key ideas:</strong> Requirements; design; variables; radio events</p>\n<p><strong>Time:</strong> 55 minutes.</p>\n<h2>Related teaching pages</h2>\n<p>This is a practical reference with its original project number. Your teacher will choose the relevant tasks for the new teaching sequence.</p>\n<ul>\n<li><a href=\"#/lesson/09-radio-communication\">Lesson 9: Radio communication</a></li>\n</ul>\n<h2>Before you start</h2>\n<ul>\n<li>Work in <a href=\"https://makecode.microbit.org/\" rel=\"noopener noreferrer\" target=\"_blank\"><strong>MakeCode Blocks</strong></a>.</li>\n<li>Use the exact project and variable names below. <code>=</code> in a condition means \"is equal to\".</li>\n<li><code>set</code> replaces a stored value; <code>change by</code> adds to the current value.</li>\n<li>Put a block <strong>inside</strong> a condition or loop when the instruction says so. Indentation matters.</li>\n<li>If the task uses radio, both boards need power and the same allocated group. No internet or Bluetooth pairing is needed between the boards.</li>\n<li>Keep the board close to the desk. Do not throw it, pull its USB cable or cover it with metal.</li>\n</ul>\n<h2>Task 1: Read the requirements</h2>\n<ol>\n<li>You will build exactly this system: pupil A sends HELP; teacher sees H; teacher B sends OK; pupil sees a tick.</li>\n<li>Complete the workbook design before coding: identify the user of each board, inputs, messages and outputs.</li>\n<li>Work in a pair with two boards. Create two NEW projects called S1-09-Pupil and S1-09-Teacher. Use lesson 7 as a reference, but name the programs clearly.</li>\n<li>Set the same teacher-allocated radio group in both on start blocks. Use a different group from other pairs.</li>\n</ol>\n<h2>Task 2: Build PUPIL</h2>\n<ol>\n<li>On button A pressed: radio send string HELP, then show icon Question.</li>\n<li>On radio received receivedString: if receivedString = OK, show icon Yes.</li>\n<li>This first version is allowed to send repeated requests. You will fix that in lesson 10.</li>\n</ol>\n<h2>Task 3: Build TEACHER with a test counter</h2>\n<ol>\n<li>Make a variable requests. Set requests to 0 in on start.</li>\n<li>On radio received receivedString: if receivedString = HELP, change requests by 1 and show string H.</li>\n<li>On button A pressed: show number requests. This is your diagnostic test counter. It counts requests, not different pupils.</li>\n<li>On button B pressed: radio send string OK, then clear screen.</li>\n<li>Test the request and acknowledgement. Press pupil A three times, waiting for each press to register. Teacher A should show 3 after a fresh reset.</li>\n<li>Save both projects. Record the repeated-request problem and take both code screenshots.</li>\n</ol>\n<h2>Test your program</h2>\n<table>\n<thead>\n<tr>\n<th>Test</th>\n<th>Expected result</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Reset both boards; pupil A once</td>\n<td>Pupil shows question mark; teacher shows H.</td>\n</tr>\n<tr>\n<td>Teacher A</td>\n<td>Counter shows 1.</td>\n</tr>\n<tr>\n<td>Pupil A twice more; teacher A</td>\n<td>Counter shows 3.</td>\n</tr>\n<tr>\n<td>Teacher B</td>\n<td>Pupil shows tick; teacher clears.</td>\n</tr>\n<tr>\n<td>Send unrelated string TEST using a temporary test sender</td>\n<td>Neither board treats TEST as HELP or OK.</td>\n</tr>\n</tbody>\n</table>\n<h2>Complete your workbook</h2>\n<ul>\n<li>Screenshot: Complete PUPIL program, before lesson 10 changes.</li>\n<li>Screenshot: Complete TEACHER program, including requests counter.</li>\n</ul>\n<p>Answer these questions in your own words:</p>\n<ol>\n<li>State two requirements of this system.</li>\n<li>Why does the teacher counter not tell us the number of different pupils?</li>\n<li>What is wrong with allowing repeated HELP requests while waiting?</li>\n</ol>\n<h2>Optional challenge</h2>\n<p>Add teacher A+B to reset requests to 0. Keep B as acknowledgement and A as viewing the count.</p>\n<h2>Before you leave</h2>\n<ul>\n<li>Save the named project and a .hex backup.</li>\n<li>Paste readable screenshots into this lesson's workbook section.</li>\n<li>Record actual test results and any repair.</li>\n</ul>"
+    },
+    {
+      "slug": "10-classroom-help-test",
+      "title": "Classroom help system: test and improve",
+      "sections": [
+        {
+          "title": "Learning intention",
+          "html": "<p><strong>Learning intention:</strong> Prevent duplicate requests, reuse a function and evaluate against requirements.</p>\n<p><strong>Key ideas:</strong> Boolean state; selection; subprograms; systematic testing</p>\n<p><strong>Time:</strong> 55 minutes.</p>"
+        },
+        {
+          "title": "Related teaching pages",
+          "html": "<p>This is a practical reference with its original project number. Your teacher will choose the relevant tasks for the new teaching sequence.</p>\n<ul>\n<li><a href=\"#/lesson/07-functions\">Lesson 7: Functions</a></li>\n<li><a href=\"#/lesson/10-testing-evaluation\">Lesson 10: Integration, testing and evaluation</a></li>\n</ul>"
+        },
+        {
+          "title": "Before you start",
+          "html": "<ul>\n<li>Work in <a href=\"https://makecode.microbit.org/\" rel=\"noopener noreferrer\" target=\"_blank\"><strong>MakeCode Blocks</strong></a>.</li>\n<li>Use the exact project and variable names below. <code>=</code> in a condition means \"is equal to\".</li>\n<li><code>set</code> replaces a stored value; <code>change by</code> adds to the current value.</li>\n<li>Put a block <strong>inside</strong> a condition or loop when the instruction says so. Indentation matters.</li>\n<li>If the task uses radio, both boards need power and the same allocated group. No internet or Bluetooth pairing is needed between the boards.</li>\n<li>Keep the board close to the desk. Do not throw it, pull its USB cable or cover it with metal.</li>\n</ul>"
+        },
+        {
+          "title": "Task 1: Make a separate improved version",
+          "html": "<ol>\n<li>Open each lesson 9 project and save a copy named S1-10-Pupil or S1-10-Teacher. If your editor does not offer duplicate, download a .hex backup then rename the open project.</li>\n<li>Keep the teacher counter from lesson 9. It is how you will prove duplicate requests are blocked.</li>\n<li>In the PUPIL program, create a variable waiting. In on start, set waiting to false after the radio group is set.</li>\n</ol>"
+        },
+        {
+          "title": "Task 2: Guard the request",
+          "html": "<ol>\n<li>In PUPIL on button A pressed, wrap the existing send and icon blocks inside if NOT waiting. Find not in Logic.</li>\n<li>At the TOP of that if branch, set waiting to true. Then send HELP and show Question. Changing the state first closes the duplicate-request window.</li>\n<li>In the received OK branch, add set waiting to false before showing the tick.</li>\n</ol>"
+        },
+        {
+          "title": "Task 3: Reuse the ready display",
+          "html": "<ol>\n<li>Make a function showReady with no extra input spaces. Inside: clear screen, then show icon SmallSquare.</li>\n<li>Call showReady at the end of on start.</li>\n<li>Add pupil on button B pressed. Inside, if NOT waiting, call showReady. B returns the idle display to ready after acknowledgement; it cannot cancel an outstanding request.</li>\n<li>The teacher program stays as lesson 9. Rename it clearly and download both programs.</li>\n</ol>"
+        },
+        {
+          "title": "Task 4: Test and evaluate",
+          "html": "<ol>\n<li>Reset BOTH boards and wait for startup. Use the complete test table below in order.</li>\n<li>Record actual results; do not write Pass until you have performed each test.</li>\n<li>If a test fails, record the fault, change the code and repeat that test.</li>\n<li>Take final screenshots of BOTH programs, including the function. Answer the workbook questions individually even if you shared boards.</li>\n<li>Finish with two sentences: which requirements were met, and one limitation of this prototype.</li>\n</ol>"
+        },
+        {
+          "title": "Test your program",
+          "html": "<table>\n<thead>\n<tr>\n<th>Test</th>\n<th>Expected result</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Reset both boards</td>\n<td>Pupil shows ready symbol; teacher requests is 0.</td>\n</tr>\n<tr>\n<td>Pupil A once; teacher A</td>\n<td>Pupil waiting true; question mark; teacher count 1.</td>\n</tr>\n<tr>\n<td>Pupil A three more times; teacher A</td>\n<td>Teacher count remains 1.</td>\n</tr>\n<tr>\n<td>Pupil B while waiting</td>\n<td>No cancellation; waiting remains true.</td>\n</tr>\n<tr>\n<td>Teacher B</td>\n<td>Pupil waiting false; tick appears; teacher clears.</td>\n</tr>\n<tr>\n<td>Pupil B</td>\n<td>Ready symbol returns.</td>\n</tr>\n<tr>\n<td>Pupil A again; teacher A</td>\n<td>New request works; teacher count becomes 2.</td>\n</tr>\n</tbody>\n</table>"
+        },
+        {
+          "title": "Complete your workbook",
+          "html": "<ul>\n<li>Screenshot: Final PUPIL code, including showReady and all events.</li>\n<li>Screenshot: Final TEACHER code, including the requests counter.</li>\n</ul>\n<p>Answer these questions in your own words:</p>\n<ol>\n<li>Explain how waiting prevents duplicate requests.</li>\n<li>Where is showReady called, and why use a function?</li>\n<li>Explain how the button event and receive event communicate through waiting.</li>\n<li>Name one real-world limitation of this prototype.</li>\n</ol>"
+        },
+        {
+          "title": "Optional challenge",
+          "html": "<p>Add a teacher-controlled recovery procedure: if a message is lost, reset BOTH boards together and test again. Explain why simply clearing waiting could create duplicate requests.</p>"
+        },
+        {
+          "title": "Before you leave",
+          "html": "<ul>\n<li>Save the named project and a .hex backup.</li>\n<li>Paste readable screenshots into this lesson's workbook section.</li>\n<li>Record actual test results and any repair.</li>\n</ul>"
+        }
+      ],
+      "html": "<p><strong>Learning intention:</strong> Prevent duplicate requests, reuse a function and evaluate against requirements.</p>\n<p><strong>Key ideas:</strong> Boolean state; selection; subprograms; systematic testing</p>\n<p><strong>Time:</strong> 55 minutes.</p>\n<h2>Related teaching pages</h2>\n<p>This is a practical reference with its original project number. Your teacher will choose the relevant tasks for the new teaching sequence.</p>\n<ul>\n<li><a href=\"#/lesson/07-functions\">Lesson 7: Functions</a></li>\n<li><a href=\"#/lesson/10-testing-evaluation\">Lesson 10: Integration, testing and evaluation</a></li>\n</ul>\n<h2>Before you start</h2>\n<ul>\n<li>Work in <a href=\"https://makecode.microbit.org/\" rel=\"noopener noreferrer\" target=\"_blank\"><strong>MakeCode Blocks</strong></a>.</li>\n<li>Use the exact project and variable names below. <code>=</code> in a condition means \"is equal to\".</li>\n<li><code>set</code> replaces a stored value; <code>change by</code> adds to the current value.</li>\n<li>Put a block <strong>inside</strong> a condition or loop when the instruction says so. Indentation matters.</li>\n<li>If the task uses radio, both boards need power and the same allocated group. No internet or Bluetooth pairing is needed between the boards.</li>\n<li>Keep the board close to the desk. Do not throw it, pull its USB cable or cover it with metal.</li>\n</ul>\n<h2>Task 1: Make a separate improved version</h2>\n<ol>\n<li>Open each lesson 9 project and save a copy named S1-10-Pupil or S1-10-Teacher. If your editor does not offer duplicate, download a .hex backup then rename the open project.</li>\n<li>Keep the teacher counter from lesson 9. It is how you will prove duplicate requests are blocked.</li>\n<li>In the PUPIL program, create a variable waiting. In on start, set waiting to false after the radio group is set.</li>\n</ol>\n<h2>Task 2: Guard the request</h2>\n<ol>\n<li>In PUPIL on button A pressed, wrap the existing send and icon blocks inside if NOT waiting. Find not in Logic.</li>\n<li>At the TOP of that if branch, set waiting to true. Then send HELP and show Question. Changing the state first closes the duplicate-request window.</li>\n<li>In the received OK branch, add set waiting to false before showing the tick.</li>\n</ol>\n<h2>Task 3: Reuse the ready display</h2>\n<ol>\n<li>Make a function showReady with no extra input spaces. Inside: clear screen, then show icon SmallSquare.</li>\n<li>Call showReady at the end of on start.</li>\n<li>Add pupil on button B pressed. Inside, if NOT waiting, call showReady. B returns the idle display to ready after acknowledgement; it cannot cancel an outstanding request.</li>\n<li>The teacher program stays as lesson 9. Rename it clearly and download both programs.</li>\n</ol>\n<h2>Task 4: Test and evaluate</h2>\n<ol>\n<li>Reset BOTH boards and wait for startup. Use the complete test table below in order.</li>\n<li>Record actual results; do not write Pass until you have performed each test.</li>\n<li>If a test fails, record the fault, change the code and repeat that test.</li>\n<li>Take final screenshots of BOTH programs, including the function. Answer the workbook questions individually even if you shared boards.</li>\n<li>Finish with two sentences: which requirements were met, and one limitation of this prototype.</li>\n</ol>\n<h2>Test your program</h2>\n<table>\n<thead>\n<tr>\n<th>Test</th>\n<th>Expected result</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Reset both boards</td>\n<td>Pupil shows ready symbol; teacher requests is 0.</td>\n</tr>\n<tr>\n<td>Pupil A once; teacher A</td>\n<td>Pupil waiting true; question mark; teacher count 1.</td>\n</tr>\n<tr>\n<td>Pupil A three more times; teacher A</td>\n<td>Teacher count remains 1.</td>\n</tr>\n<tr>\n<td>Pupil B while waiting</td>\n<td>No cancellation; waiting remains true.</td>\n</tr>\n<tr>\n<td>Teacher B</td>\n<td>Pupil waiting false; tick appears; teacher clears.</td>\n</tr>\n<tr>\n<td>Pupil B</td>\n<td>Ready symbol returns.</td>\n</tr>\n<tr>\n<td>Pupil A again; teacher A</td>\n<td>New request works; teacher count becomes 2.</td>\n</tr>\n</tbody>\n</table>\n<h2>Complete your workbook</h2>\n<ul>\n<li>Screenshot: Final PUPIL code, including showReady and all events.</li>\n<li>Screenshot: Final TEACHER code, including the requests counter.</li>\n</ul>\n<p>Answer these questions in your own words:</p>\n<ol>\n<li>Explain how waiting prevents duplicate requests.</li>\n<li>Where is showReady called, and why use a function?</li>\n<li>Explain how the button event and receive event communicate through waiting.</li>\n<li>Name one real-world limitation of this prototype.</li>\n</ol>\n<h2>Optional challenge</h2>\n<p>Add a teacher-controlled recovery procedure: if a message is lost, reset BOTH boards together and test again. Explain why simply clearing waiting could create duplicate requests.</p>\n<h2>Before you leave</h2>\n<ul>\n<li>Save the named project and a .hex backup.</li>\n<li>Paste readable screenshots into this lesson's workbook section.</li>\n<li>Record actual test results and any repair.</li>\n</ul>"
+    }
+  ]
+}

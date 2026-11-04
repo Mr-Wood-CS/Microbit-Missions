@@ -1,0 +1,38 @@
+﻿.page-content { max-width: 1000px; margin: auto; padding: 54px 32px 0; }
+.unit-heading { max-width: 700px; margin-bottom: 48px; }
+.unit-level { font-size: 13px; color: var(--muted); margin: 0 0 14px; }
+h1 { font-size: 36px; font-weight: 550; line-height: 1.25; letter-spacing: -1px; margin: 0 0 20px; }
+.unit-heading > p:last-child, .page-description { font-size: 16px; line-height: 1.8; color: var(--muted); }
+.section-heading { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 18px; gap: 20px; }
+.section-heading h2 { font-size: 18px; font-weight: 600; margin: 0; }
+.section-heading > span { font-size: 12px; color: var(--muted); }
+footer { display: flex; justify-content: space-between; gap: 20px; padding: 24px 0; margin-top: 40px; border-top: 1px solid var(--border); font-size: 12px; color: var(--muted); }
+@media(max-width: 650px) { .page-content { padding: 36px 20px 0; } h1 { font-size: 29px; } footer { font-size: 11px; } footer span { text-align: right; } }
+.site-header nav a { display:flex; align-items:center; border-bottom:2px solid transparent; text-decoration:none; color:var(--muted); font-size:14px; }
+.site-header nav a.active { border-bottom-color:var(--green); color:var(--ink); }
+.site-header nav a:hover { color:var(--green); }
+.landing-introduction { max-width:700px; margin-bottom:52px; }
+.landing-introduction p:not(.unit-level), .home-section p { color:var(--muted); font-size:16px; line-height:1.85; }
+.landing-introduction .button { margin-top:14px; }
+.button { text-decoration:none; }
+.home-section { border-top:1px solid var(--border); padding-top:28px; margin-top:36px; }
+h2 { font-size:21px; font-weight:600; }
+h3 { font-size:17px; font-weight:600; }
+.curriculum-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:30px; }
+.lesson-card { text-decoration:none; }
+.lesson-detail { max-width:760px; margin:auto; }
+.back-link { display:inline-block; color:var(--muted); font-size:14px; text-decoration:none; margin-bottom:32px; }
+.lesson-heading { margin-bottom:30px; }
+.page-position { color:var(--muted); font-size:12px; margin-bottom:12px; }
+.prose { font-size:16px; line-height:1.85; }
+.prose p { margin:0 0 20px; }
+.prose h2 { margin-top:36px; }
+.prose a, .home-section a { color:var(--green); text-underline-offset:3px; }
+.prose img { display:block; max-width:100%; height:auto; margin:24px auto; }
+.prose pre { padding:24px; background:#f5f7f4; border:1px solid var(--border); border-radius:4px; overflow:auto; line-height:1.7; }
+.prose code { font-size:14px; }
+.prose table { border-collapse:collapse; display:block; overflow:auto; width:100%; margin:24px 0; }
+.prose th,.prose td { border:1px solid var(--border); padding:12px; text-align:left; }
+.prose li { margin-bottom:9px; }
+.booklet-note,.admonition { background:#f4f7f2; padding:20px; border-left:3px solid var(--green); line-height:1.8; margin-top:28px; }
+@media(max-width:650px) { .curriculum-grid { grid-template-columns:1fr; gap:8px; } .site-header nav { flex-wrap:wrap; gap:18px; } .site-header nav a { padding-bottom:8px; font-size:13px; } }

@@ -1,0 +1,93 @@
+site_name: Microbit Missions
+
+nav:
+  - Home: 'index.md'
+  - Teaching lessons:
+    - Overview: concepts/index.md
+    - '01: Inputs, events and sequence': concepts/01-inputs-events-sequence.md
+    - '02: Variables and random numbers': concepts/02-variables-random-numbers.md
+    - '03: Selection and comparisons': concepts/03-selection-comparisons.md
+    - '04: Iteration': concepts/04-iteration.md
+    - '05: Boolean logic and state': concepts/05-boolean-logic-state.md
+    - '06: Coordinates and boundaries': concepts/06-coordinates-boundaries.md
+    - '07: Functions': concepts/07-functions.md
+    - '08: Lists and indexing': concepts/08-lists-indexing.md
+    - '09: Radio communication': concepts/09-radio-communication.md
+    - '10: Integration, testing and evaluation': concepts/10-testing-evaluation.md
+  - Practical references:
+    - 'Project 01: Pocket personality': '01-pocket-personality.md'
+    - 'Project 02: The unfair dice challenge': '02-unfair-dice.md'
+    - 'Project 03: Beat the reaction timer': '03-reaction-timer.md'
+    - 'Project 04: Protect the treasure': '04-treasure-alarm.md'
+    - 'Project 05: Tilt arcade': '05-tilt-arcade.md'
+    - 'Project 06: Memory master': '06-memory-master.md'
+    - 'Project 07: Wireless rescue team': '07-wireless-rescue.md'
+    - 'Project 08: Secret signals laboratory': '08-secret-signals.md'
+    - 'Project 09: Classroom help system: build': '09-classroom-help.md'
+    - 'Project 10: Classroom help system: test and improve': '10-classroom-help-test.md'
+
+markdown_extensions:
+      - admonition
+      - pymdownx.details
+      - def_list
+      - pymdownx.critic
+      - pymdownx.caret
+      - pymdownx.keys
+      - pymdownx.mark
+      - pymdownx.tilde
+      - attr_list
+      - md_in_html    
+      - pymdownx.emoji:
+          emoji_index: !!python/name:material.extensions.emoji.twemoji
+          emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      - pymdownx.superfences
+      - pymdownx.tabbed:
+          alternate_style: true
+      - pymdownx.highlight:
+          use_pygments: true
+          anchor_linenums: true
+          line_spans: __span
+          pygments_lang_class: true
+      - pymdownx.inlinehilite
+      - pymdownx.snippets
+      
+theme:
+  name: material
+  font:
+    text: Quicksand
+  palette:
+    scheme: default
+    primary: blue
+    accent: deep orange
+  icon:
+    logo: material/code-tags
+    admonition:
+      note: fontawesome/solid/note-sticky
+      abstract: fontawesome/solid/book
+      info: fontawesome/solid/circle-info
+      tip: fontawesome/solid/bullhorn
+      success: fontawesome/solid/check
+      question: fontawesome/solid/circle-question
+      warning: fontawesome/solid/triangle-exclamation
+      failure: fontawesome/solid/bomb
+      danger: fontawesome/solid/skull
+      bug: fontawesome/solid/robot
+      example: fontawesome/solid/flask
+      quote: fontawesome/solid/quote-left
+  features:
+    - content.code.copy
+    - content.code.annotate
+    - navigation.tabs.sticky
+    - navigation.top
+    - navigation.indexes 
+    - navigation.footer
+    - navigation.tabs
+plugins:
+  - search
+ 
+
+copyright: Copyright &copy; 2025 Pixel&Wood Computer Science Tuition
+
+extra_css:
+  - _assets/Styles/extra.css
+    
