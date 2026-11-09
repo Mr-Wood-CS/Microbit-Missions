@@ -10,7 +10,7 @@ export default function LessonPagination({ titles, current, onChange, onReturn }
       </select>
     </div>
     <div className="page-buttons">
-      {isLastPage ? <button className="button primary" onClick={onReturn}>Return to lessons</button> : <>
+      {isLastPage ? <><button className="button previous-page" onClick={() => onChange(current - 1)}>Previous</button><button className="button primary" onClick={onReturn}>Return to lessons</button></> : <>
         <button className="button previous-page" disabled={current === 0} onClick={() => onChange(current - 1)}>Previous</button>
         <button className="button primary" onClick={() => onChange(current + 1)}>Next <span aria-hidden="true">&rarr;</span></button>
       </>}

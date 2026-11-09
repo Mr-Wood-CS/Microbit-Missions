@@ -36,3 +36,75 @@ h3 { font-size:17px; font-weight:600; }
 .prose li { margin-bottom:9px; }
 .booklet-note,.admonition { background:#f4f7f2; padding:20px; border-left:3px solid var(--green); line-height:1.8; margin-top:28px; }
 @media(max-width:650px) { .curriculum-grid { grid-template-columns:1fr; gap:8px; } .site-header nav { flex-wrap:wrap; gap:18px; } .site-header nav a { padding-bottom:8px; font-size:13px; } }
+
+/* Pupil notes: the quiet, page-by-page reading layout used by Turtle Lab. */
+.lesson-page { min-height: 280px; }
+.lesson-heading h1 { font-size: 30px; }
+.lesson-heading .unit-level { font-size: 14px; }
+.lesson-progress { height: 3px; background: #edf1ec; margin: -10px 0 32px; }
+.lesson-progress span { display: block; height: 100%; background: var(--green); }
+.lesson-detail .prose { color: var(--muted); }
+.lesson-detail .prose h2, .lesson-detail .prose h3, .lesson-detail .prose strong { color: var(--ink); }
+.lesson-detail .prose > p:first-child { margin-top: 0; }
+.word-note { border-left: 2px solid #bccbbf; padding: 4px 0 4px 20px; margin: 28px 0; }
+.word-note p:last-child { margin-bottom: 0; }
+.prose .main-idea { font-size: 22px; line-height: 1.6; color: var(--green); }
+.example-layout { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 28px; align-items: start; }
+.example-layout h3 { margin-top: 0; }
+.example-layout pre { padding: 16px; white-space: pre-wrap; overflow-wrap: anywhere; }
+.code-reading p { font-size: 15px; line-height: 1.75; }
+.code-reading p:has(strong) { margin-bottom: 6px; }
+.prose details { border: 1px solid var(--border); padding: 18px 20px; margin: 28px 0; border-radius: 3px; }
+.prose summary { cursor: pointer; color: var(--green); font-weight: 600; }
+.prose details[open] summary { margin-bottom: 16px; }
+.prose details p:last-child { margin-bottom: 0; }
+.prose summary:focus-visible, select:focus-visible { outline: 2px solid var(--green); outline-offset: 5px; }
+@media(max-width:700px) { .example-layout { grid-template-columns: 1fr; gap: 16px; } }
+@media(max-width:560px) { .lesson-heading h1 { font-size: 26px; } }
+
+/* Lesson 1: short, illustrated reading steps for S1 pupils. */
+.lesson-one .learning-objectives { display: grid; grid-template-columns: 1fr; gap: 24px; }
+.lesson-one .learning-objectives h3 { font-size: 15px; font-weight: 650; margin: 0 0 12px; }
+.lesson-one .learning-objectives p, .lesson-one .learning-objectives li { font-size: 15px; line-height: 1.8; }
+.lesson-one .learning-objectives p { margin: 0; }
+.lesson-one .learning-objectives ul { margin: 0; padding-left: 19px; }
+.lesson-one .learning-objectives li { padding-left: 3px; margin-bottom: 7px; }
+.lesson-one .learning-intention h3, .lesson-one .learning-intention p, .lesson-one .learning-intention strong { color: #a12d2d; }
+.lesson-one .success-criteria h3, .lesson-one .success-criteria li, .lesson-one .success-criteria strong { color: #25613b; }
+.lesson-one .prose { line-height: 1.85; }
+.lesson-one .prose li { margin-bottom: 14px; padding-left: 4px; }
+.lesson-one .visual-steps { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; margin: 28px 0; }
+.lesson-one .two-steps { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.lesson-one .visual-step { background: #f5f8f4; border: 1px solid var(--border); padding: 18px; border-radius: 6px; }
+.lesson-one .visual-step img { width: 160px; max-width: 100%; height: 120px; object-fit: contain; margin: 0 auto 18px; }
+.lesson-one .visual-step h3 { font-size: 17px; line-height: 1.5; margin: 0 0 12px; }
+.lesson-one .visual-step p:last-child, .lesson-one .visual-step ul:last-child { margin-bottom: 0; }
+.lesson-one .visual-step ul { padding-left: 20px; }
+.lesson-one .event-example { border: 1px solid var(--border); border-radius: 6px; padding: 24px; margin: 28px 0; background: #f5f8f4; }
+.lesson-one .event-example img { width: 200px; margin: 0 0 20px; }
+.lesson-one .event-example h3 { margin-top: 0; }
+.lesson-one .event-example ol { margin-bottom: 0; padding-left: 24px; }
+.lesson-one .recap-list { margin: 0; }
+.lesson-one .recap-list > div { padding: 18px 0; border-bottom: 1px solid var(--border); }
+.lesson-one .recap-list dt { color: var(--green); font-size: 18px; font-weight: 650; margin-bottom: 6px; }
+.lesson-one .recap-list dd { margin: 0; }
+@media(max-width:600px) { .lesson-one .visual-steps { grid-template-columns: 1fr; } .lesson-one .visual-step img { margin-left: 0; } }
+
+.lesson-one .event-instructions { border: 2px solid #35644a; border-left-width: 7px; border-radius: 6px; padding: 20px 24px; margin: 24px 0; background: #f5f8f4; }
+.lesson-one .event-instructions h3 { margin: 0 0 16px; color: var(--green); }
+.lesson-one .event-instructions ol { padding-left: 24px; margin-bottom: 0; }
+.lesson-one .event-instructions li:last-child { margin-bottom: 0; }
+
+/* Separate the meaning of a term from the pictured action. */
+.lesson-one .term-definition { background: #e4eee7; color: #272e29; border-radius: 4px; padding: 14px; margin-top: 12px; }
+.lesson-one .term-explanation { background: #fff3df; color: #272e29; border-radius: 4px; padding: 14px; margin-top: 12px; }
+.lesson-one .term-definition p, .lesson-one .term-explanation p { margin: 0; }
+
+/* Align the definition and explanation rows across the three term cards. */
+.lesson-one .visual-steps:has(.term-definition) { grid-template-rows: auto auto auto auto; }
+.lesson-one .visual-step:has(.term-definition) { display: grid; grid-template-rows: subgrid; grid-row: span 4; row-gap: 12px; }
+.lesson-one .visual-step:has(.term-definition) > p { margin: 0; }
+.lesson-one .visual-step:has(.term-definition) img { margin-bottom: 6px; }
+.lesson-one .visual-step:has(.term-definition) h3 { margin: 0; }
+.lesson-one .visual-step .term-definition, .lesson-one .visual-step .term-explanation { margin-top: 0; }
+@media(max-width:600px) { .lesson-one .visual-steps:has(.term-definition) { grid-template-rows: none; } .lesson-one .visual-step:has(.term-definition) { grid-template-rows: auto auto auto auto; grid-row: auto; } }
